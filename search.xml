@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[Python基础知识]]></title>
-    <url>%2F2019%2F06%2F10%2Fpython%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%2F</url>
-    <content type="text"><![CDATA[更新中。。。]]></content>
+    <title><![CDATA[python入门介绍]]></title>
+    <url>%2F2019%2F06%2F10%2Fpython%E5%85%A5%E9%97%A8%E4%BB%8B%E7%BB%8D%2F</url>
+    <content type="text"><![CDATA[python介绍 python是一门编程语言，作为学习python的开始，需要事先搞明白：程的目的是什么？什么是编程语言？什么是编程？ Python是一种面向对象的解释型计算机程序设计语言，由荷人Guido van Rossum于1989年发明，第一个公开发行版发行于1991年。IEEE发布2017年编程语言排行榜：Python高居首位。 Python语言具有简洁性、易读性以及可扩展性，具有丰富和强大的库它常被昵称为胶水语言，能够把用其他语言制作的各种模块（尤其是C/C++）很轻松地联结在一起。 已被逐渐广泛应用于系统管理任务的处理和Web编程，大数据处理，学运算，Web编程，用户界面，游戏开发中。 从卡耐基梅隆大学的编程基础、麻省理工学院到中小学的编入课，Python越来越多被采纳和使用。Python语言的特点 简单、高级、面向对象、可扩展性、免费开源、可移植性、丰富的库、可嵌入性Python语言版本和开发环境2个主要版本：Python 2和Python 3 Python 3在设计时，没有考虑向下兼容，Python3于2008年发布，是一个较大的升级。但早期Python版本设计的程序不能在Python3上运行。Python语言的集成开发环境 IDLE（内置）、PyChram、PythonWin、Eclipse + Pydev插件、Visual Studio + Python Tools for Visual StudioPython语言的实现 python解释器Python安装下载python官网:https://www.python.org/downloads/windows/分别选择要安装的版本以及自己的操作系统对应的 测试是否安装成功 打开运行框&gt;&gt;&gt;&gt; 输入cmd回车 &gt; &gt;&gt;&gt;命令行中输入 python 能进入交互式环境则安装成功，里面会显示我们安装的版本运行Python集成开发环境IDLE运行IDLE环境安装完成后在程序里会增加一个IDLE,运行IDLE环境，使用集成开发环境IDLE解释执行Python语句，输入print(‘Hello world’) 会运行输出Hello world。关闭IDLE环境输入quit()命令；或者直接关闭IDLE窗口，均可以关闭Python解释器 更新中。。。]]></content>
       <categories>
-        <category>python基础</category>
+        <category>python基础知识</category>
       </categories>
       <tags>
-        <tag>python基础知识</tag>
+        <tag>python入门介绍</tag>
       </tags>
   </entry>
   <entry>
