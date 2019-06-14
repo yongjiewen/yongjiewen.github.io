@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="python入门介绍,">
+  <meta name="keywords" content="python基础知识,">
 
 
 
@@ -80,7 +80,7 @@
 
 
 <meta name="description" content="python介绍 python是一门编程语言，作为学习python的开始，需要事先搞明白：程的目的是什么？什么是编程语言？什么是编程？   Python是一种面向对象的解释型计算机程序设计语言，由荷人Guido van Rossum于1989年发明，第一个公开发行版发行于1991年。IEEE发布2017年编程语言排行榜：Python高居首位。 Python语言具有简洁性、易读性以及可扩展性，具有丰">
-<meta name="keywords" content="python入门介绍">
+<meta name="keywords" content="python基础知识">
 <meta property="og:type" content="article">
 <meta property="og:title" content="python入门介绍">
 <meta property="og:url" content="http://yoursite.com/2019/06/10/python入门介绍/index.html">
@@ -91,7 +91,7 @@
 <meta property="og:image" content="http://yoursite.com/images/%E5%9B%BE%E7%89%87/2.png">
 <meta property="og:image" content="http://yoursite.com/images/%E5%9B%BE%E7%89%87/3.png">
 <meta property="og:image" content="http://yoursite.com/images/%E5%9B%BE%E7%89%87/4.png">
-<meta property="og:updated_time" content="2019-06-13T09:52:27.481Z">
+<meta property="og:updated_time" content="2019-06-13T12:23:28.405Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="python入门介绍">
 <meta name="twitter:description" content="python介绍 python是一门编程语言，作为学习python的开始，需要事先搞明白：程的目的是什么？什么是编程语言？什么是编程？   Python是一种面向对象的解释型计算机程序设计语言，由荷人Guido van Rossum于1989年发明，第一个公开发行版发行于1991年。IEEE发布2017年编程语言排行榜：Python高居首位。 Python语言具有简洁性、易读性以及可扩展性，具有丰">
@@ -411,6 +411,20 @@
 <li>测试是否安装成功</li>
 <li>打开运行框&gt;&gt;&gt;&gt; 输入cmd回车  &gt; &gt;&gt;&gt;命令行中输入 python     能进入交互式环境则安装成功，里面会显示我们安装的版本<br><img src="/images/%E5%9B%BE%E7%89%87/3.png" alt><h1 id="运行Python集成开发环境IDLE"><a href="#运行Python集成开发环境IDLE" class="headerlink" title="运行Python集成开发环境IDLE"></a><strong>运行Python集成开发环境IDLE</strong></h1><h2 id="运行IDLE环境"><a href="#运行IDLE环境" class="headerlink" title="运行IDLE环境"></a><em>运行IDLE环境</em></h2>安装完成后在程序里会增加一个IDLE,运行IDLE环境，使用集成开发环境IDLE解释执行Python语句，输入print(‘Hello world’) 会运行输出Hello world。<br><img src="/images/%E5%9B%BE%E7%89%87/4.png" alt><h2 id="关闭IDLE环境"><a href="#关闭IDLE环境" class="headerlink" title="关闭IDLE环境"></a><em>关闭IDLE环境</em></h2>输入quit()命令；或者直接关闭IDLE窗口，均可以关闭Python解释器</li>
 </ul>
+<h1 id="变量"><a href="#变量" class="headerlink" title="变量"></a><strong>变量</strong></h1><h2 id="什么是变量"><a href="#什么是变量" class="headerlink" title="什么是变量"></a><em>什么是变量</em></h2><p>变量即变化的量，核心是“变”与“量”二字，变即变化，量即衡量状态。</p>
+<h2 id="为什么要有变量"><a href="#为什么要有变量" class="headerlink" title="为什么要有变量"></a><em>为什么要有变量</em></h2><p>程序执行的本质就是一系列状态的变化，变是程序执行的直接体现，所以我们需要有一种机制能够反映或者说是保存下来程序执行时状态以及状态的变化。</p>
+<h2 id="如何定义变量"><a href="#如何定义变量" class="headerlink" title="如何定义变量"></a><em>如何定义变量</em></h2><ul>
+<li>变量名，等号，变量值<br>name=’jack’<br>sex=’male’<br>age=20<br>level=10<h2 id="变量的定义规范"><a href="#变量的定义规范" class="headerlink" title="变量的定义规范"></a><em>变量的定义规范</em></h2></li>
+</ul>
+<ol>
+<li>变量名只能是 字母、数字或下划线的任意组合</li>
+<li>变量名的开头不能是数字</li>
+<li>关键字不能声明为变量名[‘and’, ‘as’, ‘assert’, ‘break’, ‘class’, ‘continue’, ‘def’, ‘del’, ‘elif’, ‘else’, ‘except’, ‘exec’, ‘finally’, ‘for’, ‘from’, ‘global’, ‘if’, ‘import’, ‘in’, ‘is’, ‘lambda’, ‘not’, ‘or’, ‘pass’, ‘print’, ‘raise’, ‘return’, ‘try’, ‘while’, ‘with’, ‘yield’]</li>
+<li>尽量避免使用中文，拼音命名<h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a><em>注释</em></h2>随着学习的深入，我们的代码会越来越复杂化，加上注释方便自己以后和别人调用看懂，增加代码的可读性</li>
+</ol>
+<ul>
+<li>代码注释分单行和多行注释， 单行注释用#，多行注释可以用三对双引号””” “””</li>
+</ul>
 <p>更新中。。。</p>
 
       
@@ -433,6 +447,35 @@
     
 
     
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>您的支持就是我更新的动力！谢谢大家捧场！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wx.png" alt="温永杰 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/zfb.png" alt="温永杰 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
 
     
 
@@ -440,7 +483,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/python入门介绍/" <i class="fa fa-tag"> python入门介绍</a>
+            <a href="/tags/python基础知识/" <i class="fa fa-tag"> python基础知识</a>
           
         </div>
       
@@ -462,6 +505,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/06/12/python数据类型/" rel="prev" title="python数据类型">
+                python数据类型 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -540,7 +587,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -605,7 +652,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#python介绍"><span class="nav-number">1.</span> <span class="nav-text">python介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Python语言的特点"><span class="nav-number">2.</span> <span class="nav-text">Python语言的特点</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Python语言版本和开发环境"><span class="nav-number">3.</span> <span class="nav-text">Python语言版本和开发环境</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2个主要版本：Python-2和Python-3"><span class="nav-number">3.1.</span> <span class="nav-text">2个主要版本：Python 2和Python 3</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Python语言的集成开发环境"><span class="nav-number">3.2.</span> <span class="nav-text">Python语言的集成开发环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Python语言的实现"><span class="nav-number">3.3.</span> <span class="nav-text">Python语言的实现</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Python安装下载"><span class="nav-number">4.</span> <span class="nav-text">Python安装下载</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#运行Python集成开发环境IDLE"><span class="nav-number">5.</span> <span class="nav-text">运行Python集成开发环境IDLE</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#运行IDLE环境"><span class="nav-number">5.1.</span> <span class="nav-text">运行IDLE环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关闭IDLE环境"><span class="nav-number">5.2.</span> <span class="nav-text">关闭IDLE环境</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#python介绍"><span class="nav-number">1.</span> <span class="nav-text">python介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Python语言的特点"><span class="nav-number">2.</span> <span class="nav-text">Python语言的特点</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Python语言版本和开发环境"><span class="nav-number">3.</span> <span class="nav-text">Python语言版本和开发环境</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2个主要版本：Python-2和Python-3"><span class="nav-number">3.1.</span> <span class="nav-text">2个主要版本：Python 2和Python 3</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Python语言的集成开发环境"><span class="nav-number">3.2.</span> <span class="nav-text">Python语言的集成开发环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Python语言的实现"><span class="nav-number">3.3.</span> <span class="nav-text">Python语言的实现</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Python安装下载"><span class="nav-number">4.</span> <span class="nav-text">Python安装下载</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#运行Python集成开发环境IDLE"><span class="nav-number">5.</span> <span class="nav-text">运行Python集成开发环境IDLE</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#运行IDLE环境"><span class="nav-number">5.1.</span> <span class="nav-text">运行IDLE环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关闭IDLE环境"><span class="nav-number">5.2.</span> <span class="nav-text">关闭IDLE环境</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#变量"><span class="nav-number">6.</span> <span class="nav-text">变量</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是变量"><span class="nav-number">6.1.</span> <span class="nav-text">什么是变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么要有变量"><span class="nav-number">6.2.</span> <span class="nav-text">为什么要有变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何定义变量"><span class="nav-number">6.3.</span> <span class="nav-text">如何定义变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#变量的定义规范"><span class="nav-number">6.4.</span> <span class="nav-text">变量的定义规范</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注释"><span class="nav-number">6.5.</span> <span class="nav-text">注释</span></a></li></ol></li></ol></div>
             
 
           </div>
