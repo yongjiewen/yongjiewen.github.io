@@ -93,7 +93,7 @@
 <meta property="og:image" content="http://yoursite.com/images/%E5%9B%BE%E7%89%87/2.png">
 <meta property="og:image" content="http://yoursite.com/images/%E5%9B%BE%E7%89%87/3.png">
 <meta property="og:image" content="http://yoursite.com/images/%E5%9B%BE%E7%89%87/4.png">
-<meta property="og:updated_time" content="2019-06-13T12:23:28.405Z">
+<meta property="og:updated_time" content="2019-06-16T02:07:30.244Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="python入门介绍">
 <meta name="twitter:description" content="python介绍 python是一门编程语言，作为学习python的开始，需要事先搞明白：程的目的是什么？什么是编程语言？什么是编程？   Python是一种面向对象的解释型计算机程序设计语言，由荷人Guido van Rossum于1989年发明，第一个公开发行版发行于1991年。IEEE发布2017年编程语言排行榜：Python高居首位。 Python语言具有简洁性、易读性以及可扩展性，具有丰">
@@ -416,14 +416,343 @@
 <h1 id="变量"><a href="#变量" class="headerlink" title="变量"></a><strong>变量</strong></h1><h2 id="什么是变量"><a href="#什么是变量" class="headerlink" title="什么是变量"></a><em>什么是变量</em></h2><p>变量即变化的量，核心是“变”与“量”二字，变即变化，量即衡量状态。</p>
 <h2 id="为什么要有变量"><a href="#为什么要有变量" class="headerlink" title="为什么要有变量"></a><em>为什么要有变量</em></h2><p>程序执行的本质就是一系列状态的变化，变是程序执行的直接体现，所以我们需要有一种机制能够反映或者说是保存下来程序执行时状态以及状态的变化。</p>
 <h2 id="如何定义变量"><a href="#如何定义变量" class="headerlink" title="如何定义变量"></a><em>如何定义变量</em></h2><ul>
-<li>变量名，等号，变量值<br>name=’jack’<br>sex=’male’<br>age=20<br>level=10<h2 id="变量的定义规范"><a href="#变量的定义规范" class="headerlink" title="变量的定义规范"></a><em>变量的定义规范</em></h2></li>
+<li>变量名，等号，变量值<br>每个变量在内存中创建，都包括变量的标识，名称和数据这些信息。<br>每个变量在使用前都必须赋值，变量赋值以后该变量才会被创建。<br>等号（=）用来给变量赋值。<br>等号（=）运算符左边是一个变量名,等号（=）运算符右边是存储在变量中的值。例如：<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">name</span>=<span class="string">'jack'</span></span><br><span class="line"><span class="attr">sex</span>=<span class="string">'male'</span></span><br><span class="line"><span class="attr">age</span>=<span class="number">20</span></span><br><span class="line"><span class="attr">level</span>=<span class="number">10</span></span><br></pre></td></tr></table></figure>
+
+</li>
 </ul>
-<ol>
+<h2 id="变量的定义规范"><a href="#变量的定义规范" class="headerlink" title="变量的定义规范"></a><em>变量的定义规范</em></h2><ol>
 <li>变量名只能是 字母、数字或下划线的任意组合</li>
 <li>变量名的开头不能是数字</li>
 <li>关键字不能声明为变量名[‘and’, ‘as’, ‘assert’, ‘break’, ‘class’, ‘continue’, ‘def’, ‘del’, ‘elif’, ‘else’, ‘except’, ‘exec’, ‘finally’, ‘for’, ‘from’, ‘global’, ‘if’, ‘import’, ‘in’, ‘is’, ‘lambda’, ‘not’, ‘or’, ‘pass’, ‘print’, ‘raise’, ‘return’, ‘try’, ‘while’, ‘with’, ‘yield’]</li>
-<li>尽量避免使用中文，拼音命名<h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a><em>注释</em></h2>随着学习的深入，我们的代码会越来越复杂化，加上注释方便自己以后和别人调用看懂，增加代码的可读性</li>
+<li>尽量避免使用中文，拼音命名</li>
 </ol>
+<h1 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a><strong>运算符</strong></h1><h2 id="什么是运算符？"><a href="#什么是运算符？" class="headerlink" title="什么是运算符？"></a><em>什么是运算符？</em></h2><ul>
+<li>举个简单的例子 4 +5 = 9 。 例子中，4 和 5 被称为操作数，”+” 称为运算符。<br>Python语言支持以下类型的运算符:</li>
+</ul>
+<ol>
+<li>算术运算符</li>
+<li>比较（关系）运算符</li>
+<li>赋值运算符</li>
+<li>逻辑运算符</li>
+<li>位运算符</li>
+<li>成员运算符</li>
+<li>身份运算符</li>
+<li>运算符优先级</li>
+</ol>
+<h2 id="算术运算符"><a href="#算术运算符" class="headerlink" title="算术运算符"></a><em>算术运算符</em></h2><p>以下假设变量： a=10，b=20：</p>
+<table>
+<thead>
+<tr>
+<th>运算符</th>
+<th align="center">描述</th>
+<th align="right">实例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>+</td>
+<td align="center">加 - 两个对象相加</td>
+<td align="right">a + b 输出结果 30</td>
+</tr>
+<tr>
+<td>-</td>
+<td align="center">减 - 得到负数或是一个数减去另一个数</td>
+<td align="right">a - b 输出结果 -10</td>
+</tr>
+<tr>
+<td>*</td>
+<td align="center">乘 - 两个数相乘或是返回一个被重复若干次的字符串</td>
+<td align="right">a * b 输出结果 200</td>
+</tr>
+<tr>
+<td>/</td>
+<td align="center">除 - x除以y</td>
+<td align="right">b / a 输出结果 2</td>
+</tr>
+<tr>
+<td>%</td>
+<td align="center">取模 - 返回除法的余数</td>
+<td align="right">b % a 输出结果 0</td>
+</tr>
+<tr>
+<td>**</td>
+<td align="center">幂 - 返回x的y次幂</td>
+<td align="right">a**b 为10的20次方， 输出结果 100000000000000000000</td>
+</tr>
+<tr>
+<td>//</td>
+<td align="center">取整除 - 返回商的整数部分（向下取整）</td>
+<td align="right">&gt;&gt;&gt; 9//24&gt;&gt;&gt; -9//2-5</td>
+</tr>
+</tbody></table>
+<h2 id="比较运算符"><a href="#比较运算符" class="headerlink" title="比较运算符"></a><em>比较运算符</em></h2><p>以下假设变量a为10，变量b为20：</p>
+<table>
+<thead>
+<tr>
+<th>运算符</th>
+<th align="center">描述</th>
+<th align="right">实例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>==</td>
+<td align="center">等于 - 比较对象是否相等</td>
+<td align="right">(a == b) 返回 False。</td>
+</tr>
+<tr>
+<td>!=</td>
+<td align="center">不等于 - 比较两个对象是否不相等</td>
+<td align="right">(a != b) 返回 True.</td>
+</tr>
+<tr>
+<td>&lt;&gt;</td>
+<td align="center">不等于 - 比较两个对象是否不相等</td>
+<td align="right">(a &lt;&gt; b) 返回 True。这个运算符类似 != 。</td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td align="center">大于 - 返回x是否大于y (a &gt; b)</td>
+<td align="right">返回 False。</td>
+</tr>
+<tr>
+<td>&lt;</td>
+<td align="center">小于 - 返回x是否小于y。所有比较运算符返回1表示真，返回0表示假。这分别与特殊的变量True和False等价。</td>
+<td align="right">(a &lt; b) 返回 True。</td>
+</tr>
+<tr>
+<td>&gt;=</td>
+<td align="center">大于等于 - 返回x是否大于等于y。</td>
+<td align="right">(a &gt;= b) 返回 False。</td>
+</tr>
+<tr>
+<td>&lt;=</td>
+<td align="center">小于等于 - 返回x是否小于等于y。</td>
+<td align="right">(a &lt;= b) 返回 True。</td>
+</tr>
+</tbody></table>
+<h2 id="赋值运算符"><a href="#赋值运算符" class="headerlink" title="赋值运算符"></a><em>赋值运算符</em></h2><p>以下假设变量a为10，变量b为20：</p>
+<table>
+<thead>
+<tr>
+<th>运算符</th>
+<th align="center">描述</th>
+<th align="right">实例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>=</td>
+<td align="center">简单的赋值运算符</td>
+<td align="right">c = a + b 将 a + b 的运算结果赋值为 c</td>
+</tr>
+<tr>
+<td>+=</td>
+<td align="center">加法赋值运算符</td>
+<td align="right">c += a 等效于 c = c + a</td>
+</tr>
+<tr>
+<td>-=</td>
+<td align="center">减法赋值运算符</td>
+<td align="right">c -= a 等效于 c = c - a</td>
+</tr>
+<tr>
+<td>*=</td>
+<td align="center">乘法赋值运算符</td>
+<td align="right">c *= a 等效于 c = c * a</td>
+</tr>
+<tr>
+<td>/=</td>
+<td align="center">除法赋值运算符</td>
+<td align="right">c /= a 等效于 c = c / a</td>
+</tr>
+<tr>
+<td>%=</td>
+<td align="center">取模赋值运算符</td>
+<td align="right">c %= a 等效于 c = c % a</td>
+</tr>
+<tr>
+<td>**=</td>
+<td align="center">幂赋值运算符</td>
+<td align="right">c <strong>= a 等效于 c = c</strong> a</td>
+</tr>
+<tr>
+<td>//=</td>
+<td align="center">取整除赋值运算符</td>
+<td align="right">c //= a 等效于 c = c // a</td>
+</tr>
+</tbody></table>
+<h2 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a><em>逻辑运算符</em></h2><p>以下假设变量 a 为 10, b为 20:</p>
+<table>
+<thead>
+<tr>
+<th>运算符</th>
+<th align="center">逻辑表达式</th>
+<th align="center">描述</th>
+<th align="right">实例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>and</td>
+<td align="center">x and y</td>
+<td align="center">布尔”与” - 如果 x 为 False，x and y 返回 False，否则它返回 y 的计算值。</td>
+<td align="right">(a and b) 返回 20。</td>
+</tr>
+<tr>
+<td>or</td>
+<td align="center">x or y</td>
+<td align="center">布尔”或” - 如果 x 是非 0，它返回 x 的值，否则它返回 y 的计算值。</td>
+<td align="right">(a or b) 返回 10。</td>
+</tr>
+<tr>
+<td>not</td>
+<td align="center">not x</td>
+<td align="center">布尔”非” - 如果 x 为 True，返回 False 。如果 x 为 False，它返回 True。</td>
+<td align="right">not(a and b) 返回 False</td>
+</tr>
+</tbody></table>
+<h2 id="位运算符"><a href="#位运算符" class="headerlink" title="位运算符"></a><em>位运算符</em></h2><p>按位运算符是把数字看作二进制来进行计算的。Python中的按位运算法则如下：<br>下表中变量 a 为 60，b 为 13，二进制格式如下：</p>
+<figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">a =   <span class="number">0011</span> <span class="number">1100</span></span><br><span class="line">b =   <span class="number">0000</span> <span class="number">1101</span></span><br><span class="line">-----------------</span><br><span class="line">a&amp;b = <span class="number">0000</span> <span class="number">1100</span></span><br><span class="line">a|b = <span class="number">0011</span> <span class="number">1101</span></span><br><span class="line">a^b = <span class="number">0011</span> <span class="number">0001</span></span><br><span class="line">~a  = <span class="number">1100</span> <span class="number">0011</span></span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>运算符</th>
+<th align="center">描述</th>
+<th align="right">实例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>&amp;</td>
+<td align="center">按位与运算符：参与运算的两个值,如果两个相应位都为1,则该位的结果为1,否则为0</td>
+<td align="right">(a &amp; b) 输出结果 12 ，二进制解释： 0000 1100</td>
+</tr>
+<tr>
+<td>|</td>
+<td align="center">按位或运算符：只要对应的二个二进位有一个为1时，结果位就为1。</td>
+<td align="right">(a | b) 输出结果 61 ，二进制解释： 0011 1101</td>
+</tr>
+<tr>
+<td>^</td>
+<td align="center">按位异或运算符：当两对应的二进位相异时，结果为1</td>
+<td align="right">(a ^ b) 输出结果 49 ，二进制解释： 0011 0001</td>
+</tr>
+<tr>
+<td>~</td>
+<td align="center">按位取反运算符：对数据的每个二进制位取反,即把1变为0,把0变为1 。~x 类似于 -x-1</td>
+<td align="right">(~a ) 输出结果 -61 ，二进制解释： 1100 0011，在一个有符号二进制数的补码形式。</td>
+</tr>
+<tr>
+<td>&lt;&lt;</td>
+<td align="center">左移动运算符：运算数的各二进位全部左移若干位，由 &lt;&lt; 右边的数字指定了移动的位数，高位丢弃，低位补0。</td>
+<td align="right">a &lt;&lt; 2 输出结果 240 ，二进制解释： 1111 0000</td>
+</tr>
+<tr>
+<td>&gt;&gt;</td>
+<td align="center">右移动运算符：把”&gt;&gt;”左边的运算数的各二进位全部右移若干位，&gt;&gt; 右边的数字指定了移动的位数</td>
+<td align="right">a &gt;&gt; 2 输出结果 15 ，二进制解释： 0000 1111</td>
+</tr>
+</tbody></table>
+<h2 id="成员运算符"><a href="#成员运算符" class="headerlink" title="成员运算符"></a><em>成员运算符</em></h2><p>除了以上的一些运算符之外，Python还支持成员运算符，测试实例中包含了一系列的成员，包括字符串，列表或元组。</p>
+<table>
+<thead>
+<tr>
+<th>运算符</th>
+<th align="center">描述</th>
+<th align="right">实例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>in</td>
+<td align="center">如果在指定的序列中找到值返回 True，否则返回 False。</td>
+<td align="right">x 在 y 序列中 , 如果 x 在 y 序列中返回 True。</td>
+</tr>
+<tr>
+<td>not in</td>
+<td align="center">如果在指定的序列中没有找到值返回 True，否则返回 False。</td>
+<td align="right">x 不在 y 序列中 , 如果 x 不在 y 序列中返回 True。</td>
+</tr>
+</tbody></table>
+<h2 id="身份运算符"><a href="#身份运算符" class="headerlink" title="身份运算符"></a><em>身份运算符</em></h2><p>身份运算符用于比较两个对象的存储单元</p>
+<table>
+<thead>
+<tr>
+<th>运算符</th>
+<th align="center">描述</th>
+<th align="right">实例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>is</td>
+<td align="center">is 是判断两个标识符是不是引用自一个对象</td>
+<td align="right">x is y, 类似 id(x) == id(y) , 如果引用的是同一个对象则返回 True，否则返回 False</td>
+</tr>
+<tr>
+<td>is not</td>
+<td align="center">is not 是判断两个标识符是不是引用自不同对象</td>
+<td align="right">x is not y ， 类似 id(a) != id(b)。如果引用的不是同一个对象则返回结果 True，否则返回 False。</td>
+</tr>
+</tbody></table>
+<p><strong>注： id() 函数用于获取对象内存地址。<br>is 与 == 区别：<br>is 用于判断两个变量引用对象是否为同一个(同一块内存空间)， == 用于判断引用变量的值是否相等</strong></p>
+<h2 id="运算符优先级"><a href="#运算符优先级" class="headerlink" title="运算符优先级"></a><em>运算符优先级</em></h2><p>以下表格列出了从最高到最低优先级的所有运算符：</p>
+<table>
+<thead>
+<tr>
+<th>运算符</th>
+<th align="right">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>**</td>
+<td align="right">指数 (最高优先级)</td>
+</tr>
+<tr>
+<td>~ + -</td>
+<td align="right">按位翻转, 一元加号和减号 (最后两个的方法名为 +@ 和 -@)</td>
+</tr>
+<tr>
+<td>* / % //</td>
+<td align="right">乘，除，取模和取整除</td>
+</tr>
+<tr>
+<td>+ -</td>
+<td align="right">加法减法</td>
+</tr>
+<tr>
+<td>&gt;&gt; &lt;&lt;</td>
+<td align="right">右移，左移运算符</td>
+</tr>
+<tr>
+<td>&amp;</td>
+<td align="right">位 ‘AND’</td>
+</tr>
+<tr>
+<td>^ |</td>
+<td align="right">位运算符</td>
+</tr>
+<tr>
+<td>&lt;= &lt; &gt; &gt;=</td>
+<td align="right">比较运算符</td>
+</tr>
+<tr>
+<td>&lt;&gt; == !=</td>
+<td align="right">等于运算符</td>
+</tr>
+<tr>
+<td>= %= /= //= -= += <em>= *</em>=</td>
+<td align="right">赋值运算符</td>
+</tr>
+<tr>
+<td>is is not</td>
+<td align="right">身份运算符</td>
+</tr>
+<tr>
+<td>in not in</td>
+<td align="right">成员运算符</td>
+</tr>
+<tr>
+<td>not and or</td>
+<td align="right">逻辑运算符</td>
+</tr>
+</tbody></table>
+<h1 id="注释"><a href="#注释" class="headerlink" title="注释"></a><strong>注释</strong></h1><p>随着学习的深入，我们的代码会越来越复杂化，加上注释方便自己以后和别人调用看懂，增加代码的可读性</p>
 <ul>
 <li>代码注释分单行和多行注释， 单行注释用#，多行注释可以用三对双引号””” “””</li>
 </ul>
@@ -508,8 +837,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/06/11/流程控制循环/" rel="prev" title="流程控制循环">
-                流程控制循环 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/06/12/python数据类型/" rel="prev" title="python数据类型">
+                python数据类型 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -668,7 +997,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#python介绍"><span class="nav-number">1.</span> <span class="nav-text">python介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Python语言的特点"><span class="nav-number">2.</span> <span class="nav-text">Python语言的特点</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Python语言版本和开发环境"><span class="nav-number">3.</span> <span class="nav-text">Python语言版本和开发环境</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2个主要版本：Python-2和Python-3"><span class="nav-number">3.1.</span> <span class="nav-text">2个主要版本：Python 2和Python 3</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Python语言的集成开发环境"><span class="nav-number">3.2.</span> <span class="nav-text">Python语言的集成开发环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Python语言的实现"><span class="nav-number">3.3.</span> <span class="nav-text">Python语言的实现</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Python安装下载"><span class="nav-number">4.</span> <span class="nav-text">Python安装下载</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#运行Python集成开发环境IDLE"><span class="nav-number">5.</span> <span class="nav-text">运行Python集成开发环境IDLE</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#运行IDLE环境"><span class="nav-number">5.1.</span> <span class="nav-text">运行IDLE环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关闭IDLE环境"><span class="nav-number">5.2.</span> <span class="nav-text">关闭IDLE环境</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#变量"><span class="nav-number">6.</span> <span class="nav-text">变量</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是变量"><span class="nav-number">6.1.</span> <span class="nav-text">什么是变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么要有变量"><span class="nav-number">6.2.</span> <span class="nav-text">为什么要有变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何定义变量"><span class="nav-number">6.3.</span> <span class="nav-text">如何定义变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#变量的定义规范"><span class="nav-number">6.4.</span> <span class="nav-text">变量的定义规范</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注释"><span class="nav-number">6.5.</span> <span class="nav-text">注释</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#python介绍"><span class="nav-number">1.</span> <span class="nav-text">python介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Python语言的特点"><span class="nav-number">2.</span> <span class="nav-text">Python语言的特点</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Python语言版本和开发环境"><span class="nav-number">3.</span> <span class="nav-text">Python语言版本和开发环境</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2个主要版本：Python-2和Python-3"><span class="nav-number">3.1.</span> <span class="nav-text">2个主要版本：Python 2和Python 3</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Python语言的集成开发环境"><span class="nav-number">3.2.</span> <span class="nav-text">Python语言的集成开发环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Python语言的实现"><span class="nav-number">3.3.</span> <span class="nav-text">Python语言的实现</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Python安装下载"><span class="nav-number">4.</span> <span class="nav-text">Python安装下载</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#运行Python集成开发环境IDLE"><span class="nav-number">5.</span> <span class="nav-text">运行Python集成开发环境IDLE</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#运行IDLE环境"><span class="nav-number">5.1.</span> <span class="nav-text">运行IDLE环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关闭IDLE环境"><span class="nav-number">5.2.</span> <span class="nav-text">关闭IDLE环境</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#变量"><span class="nav-number">6.</span> <span class="nav-text">变量</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是变量"><span class="nav-number">6.1.</span> <span class="nav-text">什么是变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么要有变量"><span class="nav-number">6.2.</span> <span class="nav-text">为什么要有变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何定义变量"><span class="nav-number">6.3.</span> <span class="nav-text">如何定义变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#变量的定义规范"><span class="nav-number">6.4.</span> <span class="nav-text">变量的定义规范</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#运算符"><span class="nav-number">7.</span> <span class="nav-text">运算符</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是运算符？"><span class="nav-number">7.1.</span> <span class="nav-text">什么是运算符？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#算术运算符"><span class="nav-number">7.2.</span> <span class="nav-text">算术运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#比较运算符"><span class="nav-number">7.3.</span> <span class="nav-text">比较运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#赋值运算符"><span class="nav-number">7.4.</span> <span class="nav-text">赋值运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#逻辑运算符"><span class="nav-number">7.5.</span> <span class="nav-text">逻辑运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#位运算符"><span class="nav-number">7.6.</span> <span class="nav-text">位运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#成员运算符"><span class="nav-number">7.7.</span> <span class="nav-text">成员运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#身份运算符"><span class="nav-number">7.8.</span> <span class="nav-text">身份运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#运算符优先级"><span class="nav-number">7.9.</span> <span class="nav-text">运算符优先级</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#注释"><span class="nav-number">8.</span> <span class="nav-text">注释</span></a></li></ol></div>
             
 
           </div>
