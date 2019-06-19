@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[流程控制循环]]></title>
-    <url>%2F2019%2F06%2F16%2F%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6%E5%BE%AA%E7%8E%AF%2F</url>
-    <content type="text"></content>
+    <title><![CDATA[流程控制程序]]></title>
+    <url>%2F2019%2F06%2F16%2F%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6%E7%A8%8B%E5%BA%8F%2F</url>
+    <content type="text"><![CDATA[选择结构：if语句； 分支结构的形式： 单分支、双分支和多分支 单分支结构if语句单分支结构的语法形式：当条件表达式的值为真（True）时，执行if后的语句（块），否则不做任何操作，控制将转到if语句的结束点 12If (条件表达式）: 语句/语句块 实例：比较两个数字的大小使得a大于b 1234567a=int(inpurt("输入一个数字A:"))a=int(inpurt("输入一个数字B:"))if(a&lt;b):t=aa=bb=tprint(a,b) 双分支结构 if语句双分支结构的语法形式当条件表达式的值为真（True）时，执行if后的语句（块）1，否则执行else后的语句（块）2条件表达式1234if 条件1: 缩进的代码块else: 缩进的代码块 实例1：判断数字的大小 123456a=int(inpurt("输入一个数字A:"))a=int(inpurt("输入一个数字B:"))if(a&lt;b):print('数字B大于A':B)else:print('数字A大于B':A) 实例2：判断某一年是否为闰年判断闰年的条件是：年份能被4整除但不能被100整除，或者能被400整除 12345y=int(input("输入年份："))if((y%4 == 0 and y%100 !=0) or y%400 == 0): print("是闰年")else: print("不是闰年") 多分支结构if语句多分支结构的语法形式123456789if 条件1:缩进的代码块elif 条件2:缩进的代码块elif 条件3:缩进的代码块......else: 缩进的代码块 实例1：判断成绩的优秀、良好、及格、不及格 123456789101112131415'''如果：成绩&gt;=90，那么：优秀如果成绩&gt;=80且&lt;90,那么：良好如果成绩&gt;=60且&lt;80,那么：及格其他情况：不及格'''score=int(input('输入成绩&gt;&gt;: '))if score &gt;= 90: print('优秀')elif score &gt;= 80: print('良好')elif score &gt;= 60: print('及格')else: print('不及格') 实例2：判断某一年是否为闰年判断闰年的条件是：年份能被4整除但不能被100整除，或者能被400整除 123456789y=int(input("输入年份："))if(y%400 == 0): print("是闰年")elif(y%4 != 0): print("不是闰年")elif(y%100 == 0): print("不是闰年")else: print("是闰年") If的嵌套12345678910if(条件表达式1)： if(条件表达式1): 缩进的代码块 else: 缩进的代码块else: if (条件表达式1): 缩进的代码块 else: 缩进的代码块 实例1：如果：成绩&gt;=90，那么：优秀如果成绩&gt;=80且&lt;90,那么：良好如果成绩&gt;=60且&lt;80,那么：及格其他情况：不及格 1234567891011score=int(input('输入成绩&gt;&gt;: '))if(score&gt;=60): if(score&gt;=80): if(score&gt;=90): print('优秀') else: print('良好') else: print('及格')else: print('不及格') 实例2：判断某一年是否为闰年判断闰年的条件是：年份能被4整除但不能被100整除，或者能被400整除 1234567891011y=int(input("输入年份："))if(y%400 == 0): print("是闰年")else: if(y%4 == 0): if(y%100 == 0): print("不是闰年") else: print("是闰年") else: print("不是闰年") 循环结构：for语句、while语句for语句 range对象•从start开始，到stop结束（不包含stop）。如果指定了可选的步长step，则序列按步长增长12for 变量 in 对象：循环体语句/语句块 更新中。。。。]]></content>
       <categories>
         <category>python基础知识</category>
       </categories>
