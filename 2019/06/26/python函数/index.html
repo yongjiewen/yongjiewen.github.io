@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="不能放纵自己过一个烂透的人生">
+<meta name="description" content="函数作用 作用（功能）：提高代码块的质量，实现代码的可重复利用，实现特定功能  函数分类1. 内置函数 python解释器已经为我们定义好了的函数即内置函数。对于内置函数，我们可以拿来就用而无需事先定义，如abs(),len(),sum(),max()  2. 自定义函数根据自己所需的功能（需求），定制好自己的函数来实现功能 函数定义 函数的使用原则：先定义，再调用  1. 定义语法：123456">
 <meta name="keywords" content="python基础知识">
 <meta property="og:type" content="article">
 <meta property="og:title" content="python函数">
 <meta property="og:url" content="http://yoursite.com/2019/06/26/python函数/index.html">
 <meta property="og:site_name" content="杰克丶探索">
-<meta property="og:description" content="不能放纵自己过一个烂透的人生">
+<meta property="og:description" content="函数作用 作用（功能）：提高代码块的质量，实现代码的可重复利用，实现特定功能  函数分类1. 内置函数 python解释器已经为我们定义好了的函数即内置函数。对于内置函数，我们可以拿来就用而无需事先定义，如abs(),len(),sum(),max()  2. 自定义函数根据自己所需的功能（需求），定制好自己的函数来实现功能 函数定义 函数的使用原则：先定义，再调用  1. 定义语法：123456">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-06-26T08:32:06.435Z">
+<meta property="og:updated_time" content="2019-06-29T08:53:04.230Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="python函数">
-<meta name="twitter:description" content="不能放纵自己过一个烂透的人生">
+<meta name="twitter:description" content="函数作用 作用（功能）：提高代码块的质量，实现代码的可重复利用，实现特定功能  函数分类1. 内置函数 python解释器已经为我们定义好了的函数即内置函数。对于内置函数，我们可以拿来就用而无需事先定义，如abs(),len(),sum(),max()  2. 自定义函数根据自己所需的功能（需求），定制好自己的函数来实现功能 函数定义 函数的使用原则：先定义，再调用  1. 定义语法：123456">
 
 
 
@@ -391,7 +391,77 @@
       
 
       
-        
+        <h1 id="函数作用"><a href="#函数作用" class="headerlink" title="函数作用"></a><strong>函数作用</strong></h1><ul>
+<li>作用（功能）：提高代码块的质量，实现代码的可重复利用，实现特定功能</li>
+</ul>
+<h1 id="函数分类"><a href="#函数分类" class="headerlink" title="函数分类"></a><strong>函数分类</strong></h1><h2 id="1-内置函数"><a href="#1-内置函数" class="headerlink" title="1. 内置函数"></a><em>1. 内置函数</em></h2><ul>
+<li>python解释器已经为我们定义好了的函数即内置函数。对于内置函数，我们可以拿来就用而无需事先定义，如abs(),len(),sum(),max()</li>
+</ul>
+<h2 id="2-自定义函数"><a href="#2-自定义函数" class="headerlink" title="2. 自定义函数"></a><em>2. 自定义函数</em></h2><p>根据自己所需的功能（需求），定制好自己的函数来实现功能</p>
+<h1 id="函数定义"><a href="#函数定义" class="headerlink" title="函数定义"></a><strong>函数定义</strong></h1><ul>
+<li>函数的使用原则：先定义，再调用</li>
+</ul>
+<h2 id="1-定义语法："><a href="#1-定义语法：" class="headerlink" title="1. 定义语法："></a><em>1. 定义语法：</em></h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> 函数名<span class="params">(参数<span class="number">1</span>,参数<span class="number">2</span>,...)</span>:</span></span><br><span class="line">    <span class="string">"""</span></span><br><span class="line"><span class="string">    文档描述函数功能</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    代码<span class="number">1</span></span><br><span class="line">    代码<span class="number">2</span></span><br><span class="line">    代码<span class="number">3</span></span><br><span class="line">    <span class="keyword">return</span> 值</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span>:</span>定义函数的关键字</span><br><span class="line">函数名：是用来调用函数的，</span><br><span class="line">    函数名的命名必须能反映出函数的功能</span><br><span class="line">文档描述：推荐写上，来增强函数的可读性</span><br><span class="line">代码块：函数的功能实现代码</span><br><span class="line"><span class="keyword">return</span>：函数的返回值</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-函数调用"><a href="#2-函数调用" class="headerlink" title="2. 函数调用"></a><em>2. 函数调用</em></h2><ul>
+<li>函数名加括号就可以调用函数</li>
+</ul>
+<h1 id="函数的两种定义方式"><a href="#函数的两种定义方式" class="headerlink" title="函数的两种定义方式"></a><strong>函数的两种定义方式</strong></h1><h2 id="1-有参函数"><a href="#1-有参函数" class="headerlink" title="1. 有参函数"></a><em>1. 有参函数</em></h2><ul>
+<li>参数是函数体代码用来接收外部传入值的<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#判断两个数的大小</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">m_max</span><span class="params">(x,y)</span>:</span></span><br><span class="line">    <span class="keyword">if</span>  x &gt; y:</span><br><span class="line">        print(x)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        print(y)</span><br><span class="line">max(<span class="number">20</span>，<span class="number">35</span>)   <span class="comment">#函数的调用定义时有参调用时也要传入参数</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h2 id="2-无参函数"><a href="#2-无参函数" class="headerlink" title="2. 无参函数"></a><em>2. 无参函数</em></h2><ul>
+<li>当函数体的代码逻辑不需要函数的调用者掺入值的情况下，就无参<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#定义一个输入姓名密码的功能</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="params">()</span>:</span></span><br><span class="line">    name=input(<span class="string">'username&gt;&gt;: '</span>).strip()</span><br><span class="line">    pwd=input(<span class="string">'password&gt;&gt;: '</span>).strip()</span><br><span class="line">    print(name,pwd)</span><br><span class="line"></span><br><span class="line">name_pwd()      <span class="comment"># 调用函数定义时无参，调用时也不需要传入参数</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h1 id="函数的返回值"><a href="#函数的返回值" class="headerlink" title="函数的返回值"></a><strong>函数的返回值</strong></h1><ul>
+<li>return注意点：</li>
+</ul>
+<ol>
+<li>return返回值的值，没有类型限制</li>
+<li>return是函数结束的标志，函数内可以写多个return，但<br>执行一次，函数就立刻结束，并把return后的值作为本次调用的返回值</li>
+</ol>
+<h2 id="1-没有return，返回值None"><a href="#1-没有return，返回值None" class="headerlink" title="1. 没有return，返回值None"></a><em>1. 没有return，返回值None</em></h2><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">foo</span><span class="params">()</span></span><span class="symbol">:</span></span><br><span class="line">pass</span><br><span class="line">print(foo())</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;Nnoe</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-有return，后面跟一个值返回本身"><a href="#2-有return，后面跟一个值返回本身" class="headerlink" title="2. 有return，后面跟一个值返回本身"></a><em>2. 有return，后面跟一个值返回本身</em></h2><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">foo2</span><span class="params">()</span></span><span class="symbol">:</span></span><br><span class="line"><span class="keyword">return</span> <span class="string">'返回值'</span></span><br><span class="line">print(foo2())</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;返回值</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-返回多个值-逗号隔开，返回一个元组"><a href="#3-返回多个值-逗号隔开，返回一个元组" class="headerlink" title="3. 返回多个值,逗号隔开，返回一个元组"></a><em>3. 返回多个值,逗号隔开，返回一个元组</em></h2><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">foo3</span><span class="params">()</span></span><span class="symbol">:</span></span><br><span class="line"><span class="keyword">return</span> <span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span></span><br><span class="line">print(foo3)</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;(<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>)</span><br></pre></td></tr></table></figure>
+
+<h1 id="函数参数形式应用"><a href="#函数参数形式应用" class="headerlink" title="函数参数形式应用"></a><strong>函数参数形式应用</strong></h1><ul>
+<li>函数参数分为形参和实参<blockquote>
+<p>形参：在定义阶段的参数称为形参<br>实参：在调用阶段的实际参数称为实参</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="1-位置参数"><a href="#1-位置参数" class="headerlink" title="1. 位置参数"></a><em>1. 位置参数</em></h2><ul>
+<li>即定义函数时，按照位置(顺序从左到右)定义的形参，称为位置形参<br>调用：在调用函数时必须为其传值一一对应，多一个不行，少一个也不行</li>
+<li><em>注意：位置实参会与形参一一对应*</em><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">foo</span><span class="params">(x,y,z)</span></span><span class="symbol">:</span></span><br><span class="line">    print(x,y,z)</span><br><span class="line">foo(<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>)</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;<span class="number">1</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h2 id="2-关键字参数"><a href="#2-关键字参数" class="headerlink" title="2. 关键字参数"></a><em>2. 关键字参数</em></h2><ol>
+<li><p>在调用阶段，按照字典key=value的形式的实参，称为关键字参数<br>注意：指明道姓的将值传给谁，不需要按照顺序</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">foo</span><span class="params">(x,y,z)</span></span><span class="symbol">:</span></span><br><span class="line">    print(x,y,z)</span><br><span class="line">foo(x=<span class="number">1</span>,z=<span class="number">2</span>,y=<span class="number">3</span>)</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;<span class="number">1</span>,<span class="number">3</span>,<span class="number">2</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>位置实参与关键字实参可以混合使用，需要遵循形参的规则，不能为同一个形参重复赋值，<br>位置实参需要放到关键字实参的前面</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">foo</span><span class="params">(x,y,z)</span></span><span class="symbol">:</span></span><br><span class="line">    print(x,y,z)</span><br><span class="line">foo(<span class="number">1</span>,x=<span class="number">2</span>,z=<span class="number">2</span>,y=<span class="number">3</span>) <span class="comment">#报错，为同一个值多次赋值</span></span><br><span class="line">foo(<span class="number">1</span>,z=<span class="number">2</span>,y=<span class="number">3</span>)</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;<span class="number">1</span>,<span class="number">3</span>,<span class="number">2</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h2 id="3-默认参数"><a href="#3-默认参数" class="headerlink" title="3. 默认参数"></a><em>3. 默认参数</em></h2><ul>
+<li>在定义阶段就已经为某个形参赋值了，默认参数的值应该为不可变类型，称为默认参数</li>
+<li><em>注意：*</em></li>
+</ul>
+<ol>
+<li>默认参数必须放在位置形参后面</li>
+<li>因为定义赋过值，调用阶段可以不赋值，若要改变值，可在调用时重新赋值<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">foo</span><span class="params">(x,y,z=<span class="number">2</span>)</span></span><span class="symbol">:</span></span><br><span class="line">    print(x,y,z)</span><br><span class="line">foo(<span class="number">1</span>,y=<span class="number">3</span>)</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;<span class="number">1</span>,<span class="number">3</span>,<span class="number">2</span></span><br><span class="line">foo(<span class="number">1</span>,<span class="number">2</span>,<span class="number">5</span>)<span class="comment">#改变默认参数的值</span></span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;<span class="number">1</span>,<span class="number">2</span>,<span class="number">5</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h2 id="4-可变参数"><a href="#4-可变参数" class="headerlink" title="4.可变参数"></a><em>4.可变参数</em></h2><p>更新中。。。</p>
+
       
     </div>
     
@@ -522,8 +592,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -608,6 +687,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#函数作用"><span class="nav-number">1.</span> <span class="nav-text">函数作用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#函数分类"><span class="nav-number">2.</span> <span class="nav-text">函数分类</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-内置函数"><span class="nav-number">2.1.</span> <span class="nav-text">1. 内置函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-自定义函数"><span class="nav-number">2.2.</span> <span class="nav-text">2. 自定义函数</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#函数定义"><span class="nav-number">3.</span> <span class="nav-text">函数定义</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-定义语法："><span class="nav-number">3.1.</span> <span class="nav-text">1. 定义语法：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-函数调用"><span class="nav-number">3.2.</span> <span class="nav-text">2. 函数调用</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#函数的两种定义方式"><span class="nav-number">4.</span> <span class="nav-text">函数的两种定义方式</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-有参函数"><span class="nav-number">4.1.</span> <span class="nav-text">1. 有参函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-无参函数"><span class="nav-number">4.2.</span> <span class="nav-text">2. 无参函数</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#函数的返回值"><span class="nav-number">5.</span> <span class="nav-text">函数的返回值</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-没有return，返回值None"><span class="nav-number">5.1.</span> <span class="nav-text">1. 没有return，返回值None</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-有return，后面跟一个值返回本身"><span class="nav-number">5.2.</span> <span class="nav-text">2. 有return，后面跟一个值返回本身</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-返回多个值-逗号隔开，返回一个元组"><span class="nav-number">5.3.</span> <span class="nav-text">3. 返回多个值,逗号隔开，返回一个元组</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#函数参数形式应用"><span class="nav-number">6.</span> <span class="nav-text">函数参数形式应用</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-位置参数"><span class="nav-number">6.1.</span> <span class="nav-text">1. 位置参数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-关键字参数"><span class="nav-number">6.2.</span> <span class="nav-text">2. 关键字参数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-默认参数"><span class="nav-number">6.3.</span> <span class="nav-text">3. 默认参数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-可变参数"><span class="nav-number">6.4.</span> <span class="nav-text">4.可变参数</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
