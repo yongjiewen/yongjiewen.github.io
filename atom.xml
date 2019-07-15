@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>杰克丶探索</title>
+  <title>杰克·🐂</title>
   
   <subtitle>小白成长记录之路</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-07-03T08:36:54.461Z</updated>
+  <updated>2019-07-15T14:16:27.392Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>类</title>
+    <link href="http://yoursite.com/2019/07/15/%E7%B1%BB/"/>
+    <id>http://yoursite.com/2019/07/15/类/</id>
+    <published>2019-07-15T14:13:00.000Z</published>
+    <updated>2019-07-15T14:16:27.392Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>更新中</strong></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;strong&gt;更新中&lt;/strong&gt;&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+      <category term="python基础知识" scheme="http://yoursite.com/categories/python%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    
+    
+      <category term="python基础知识" scheme="http://yoursite.com/tags/python%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    
+  </entry>
   
   <entry>
     <title>python函数</title>
