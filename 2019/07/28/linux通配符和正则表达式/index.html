@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="杰克·🐂">
 <meta property="og:description" content="Linux通配符Linux通配符和三剑客（akw,sed,grep）正则表达式是不一样的，因此，代表的意义也有较大的区别通配符一般用户命令行bash环境，而linux正则表达式用于grep，sed,awk场景    通配符 描述    * 代表任意字符（0到多个）*****   ？ 通配符，代表任意1个字符   ； 连续不同命令的分隔符*****   # 配置文件注释*****   | 管道***">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-07-28T03:08:53.769Z">
+<meta property="og:updated_time" content="2019-07-28T03:20:22.637Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="linux通配符和正则表达式">
 <meta name="twitter:description" content="Linux通配符Linux通配符和三剑客（akw,sed,grep）正则表达式是不一样的，因此，代表的意义也有较大的区别通配符一般用户命令行bash环境，而linux正则表达式用于grep，sed,awk场景    通配符 描述    * 代表任意字符（0到多个）*****   ？ 通配符，代表任意1个字符   ； 连续不同命令的分隔符*****   # 配置文件注释*****   | 管道***">
@@ -404,87 +404,87 @@
 <td align="right">代表任意字符（0到多个）*****</td>
 </tr>
 <tr>
-<td>？</td>
+<td><strong>？</strong></td>
 <td align="right">通配符，代表任意1个字符</td>
 </tr>
 <tr>
-<td>；</td>
+<td><strong>；</strong></td>
 <td align="right">连续不同命令的分隔符*****</td>
 </tr>
 <tr>
-<td>#</td>
+<td><strong>#</strong></td>
 <td align="right">配置文件注释*****</td>
 </tr>
 <tr>
-<td>|</td>
+<td><strong>|</strong></td>
 <td align="right">管道*****</td>
 </tr>
 <tr>
-<td>$</td>
+<td><strong>$</strong></td>
 <td align="right">变量前需要加的符号</td>
 </tr>
 <tr>
-<td>/</td>
+<td><strong>/</strong></td>
 <td align="right">路径分隔符</td>
 </tr>
 <tr>
-<td>&gt;</td>
+<td><strong>&gt;</strong></td>
 <td align="right">重定向，覆盖*****</td>
 </tr>
 <tr>
-<td>&gt;&gt;</td>
+<td><strong>&gt;&gt;</strong></td>
 <td align="right">追加重定向，追加*****</td>
 </tr>
 <tr>
-<td>&lt;</td>
+<td><strong>&lt;</strong></td>
 <td align="right">输入重定向*****（xargs,tr）</td>
 </tr>
 <tr>
-<td>&lt;&lt;</td>
+<td><strong>&lt;&lt;</strong></td>
 <td align="right">追加输入重定向(cat)</td>
 </tr>
 <tr>
-<td>‘</td>
+<td><strong>‘</strong></td>
 <td align="right">单引号，不具有变量置换功能，输出时所见即所得*****</td>
 </tr>
 <tr>
-<td>“</td>
+<td><strong>“</strong></td>
 <td align="right">双引号，具有变量置换功能，解析变量后输出 *****不加引号相当于双引号，常用双引号</td>
 </tr>
 <tr>
-<td>`</td>
-<td align="right">tab健上的健，反引号，两个``中间为命令，会先执行，等价$()*****`</td>
+<td><strong>`</strong></td>
+<td align="right">tab健上的健，反引号，两个 <strong>``</strong> 中间为命令，会先执行，等价$()*****</td>
 </tr>
 <tr>
-<td>{}</td>
+<td><strong>{}</strong></td>
 <td align="right">中间为命令区块组合或内容序列</td>
 </tr>
 <tr>
-<td>！</td>
+<td><strong>！</strong></td>
 <td align="right">逻辑运算中的“非”（not）</td>
 </tr>
 <tr>
-<td>&amp;&amp;</td>
+<td><strong>&amp;&amp;</strong></td>
 <td align="right">（and并且）当前一个指令执行成功时，执行后一个指令</td>
 </tr>
 <tr>
-<td>||</td>
+<td><strong>||</strong></td>
 <td align="right">（or或者）当前一个指令执行失败时，执行后一个指令</td>
 </tr>
 <tr>
-<td>~</td>
+<td><strong>~</strong></td>
 <td align="right">用户的家目录*****</td>
 </tr>
 <tr>
-<td>-</td>
+<td><strong>-</strong></td>
 <td align="right">上一次的目录*****</td>
 </tr>
 <tr>
-<td>..</td>
+<td><strong>..</strong></td>
 <td align="right">上一级目录*****</td>
 </tr>
 <tr>
-<td>.</td>
+<td><strong>.</strong></td>
 <td align="right">当前目录</td>
 </tr>
 </tbody></table>
@@ -498,27 +498,27 @@
 </tr>
 </thead>
 <tbody><tr>
-<td>^</td>
+<td><strong>^</strong></td>
 <td align="center">以。。。开头</td>
 <td align="right">^d,就是以d开头</td>
 </tr>
 <tr>
-<td>$</td>
+<td><strong>$</strong></td>
 <td align="center">以。。。结尾</td>
 <td align="right">/$,就是以/结尾</td>
 </tr>
 <tr>
-<td>^$</td>
+<td><strong>^$</strong></td>
 <td align="center">表示空行</td>
 <td align="right"></td>
 </tr>
 <tr>
-<td>\</td>
+<td><strong>\</strong></td>
 <td align="center">转义符，将特殊字符进行转义，忽略其特殊意义</td>
 <td align="right">a\.b匹配a.b，.被转义为特殊意义普通字符</td>
 </tr>
 <tr>
-<td>.</td>
+<td><strong>.</strong></td>
 <td align="center">代表且只能代表任意一个字符除换行符\n</td>
 <td align="right">a.b匹配abb或adb，点号可以替换任意字符</td>
 </tr>
@@ -528,67 +528,67 @@
 <td align="right">ab*c，可以匹配ac,abc,abbc,abbbc等。</td>
 </tr>
 <tr>
-<td>.*</td>
+<td><strong>.*</strong></td>
 <td align="center">匹配所有字符、扩展、^.* 以任意多个字符开头，.*$以任意多个字符结尾</td>
 <td align="right"></td>
 </tr>
 <tr>
-<td>[]</td>
+<td><strong>[]</strong></td>
 <td align="center">匹配包含在[字符]之中的任意一个字符</td>
 <td align="right">abc[de]可以匹配abcd或abce</td>
 </tr>
 <tr>
-<td>[-]</td>
+<td><strong>[-]</strong></td>
 <td align="center">匹配一个指定范围内的字符（这一个字符来自于括号内定义的）,当 - 需要被当中普通符号匹配时，只能放到[]的最左边或最右边</td>
 <td align="right">[a-z]可以匹配字母a,bc其中的任意一个</td>
 </tr>
 <tr>
-<td>[^]</td>
+<td><strong>[^]</strong></td>
 <td align="center">内的^代表取反的意思匹配不包含^后的任意一个字符的内容</td>
 <td align="right">abc[^de],不可以匹配abcd,abce</td>
 </tr>
 <tr>
-<td>a\{n,m\}</td>
+<td><strong>a\{n,m\}</strong></td>
 <td align="center">代表左边字符a，重复n到m次，前一个重复的字符。如果用egrep/sed -r可以去掉斜线</td>
 <td align="right"></td>
 </tr>
 <tr>
-<td>a\{n,\}</td>
+<td><strong>a\{n,\}</strong></td>
 <td align="center">代表左边字符a，重复至少n次，前一个重复的字符。如果用egrep/sed -r可以去掉斜线</td>
 <td align="right"></td>
 </tr>
 <tr>
-<td>a\{n\}</td>
+<td><strong>a\{n\}</strong></td>
 <td align="center">代表左边字符a，重复n次，前一个重复的字符。如果用egrep/sed -r可以去掉斜线</td>
 <td align="right"></td>
 </tr>
 <tr>
-<td>a\{,m\}</td>
+<td><strong>a\{,m\}</strong></td>
 <td align="center">代表左边字符a，最多重复m次，前一个重复的字符。如果用egrep/sed -r可以去掉斜线</td>
 <td align="right"></td>
 </tr>
 <tr>
-<td>()</td>
+<td><strong>()</strong></td>
 <td align="center">匹配表达式，创建一个用于匹配的子串</td>
 <td align="right">ma(tri)?匹配max或maxtrix</td>
 </tr>
 <tr>
-<td>+</td>
+<td><strong>+</strong></td>
 <td align="center">表示重复“一个或一个以上”前面的字符（*是0或多个）</td>
 <td align="right">ab-6+匹配ab-6、ab-666，不能匹配ab-</td>
 </tr>
 <tr>
-<td>？</td>
+<td><strong>？</strong></td>
 <td align="center">表示重复“0个或一个”前面的字符</td>
 <td align="right">colou?r可以匹配color或者colour，不能匹配colouur</td>
 </tr>
 <tr>
-<td>|</td>
+<td><strong>|</strong></td>
 <td align="center">匹配|两边的任意一项，表示同时过滤多个字符串（或者）</td>
 <td align="right">ab(c|d)匹配abc或abd</td>
 </tr>
 <tr>
-<td>（）</td>
+<td><strong>（）</strong></td>
 <td align="center">分组过滤，后向引用</td>
 <td align="right"></td>
 </tr>
@@ -764,7 +764,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -775,7 +775,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
