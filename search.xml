@@ -16,10 +16,10 @@
     <url>%2F2019%2F07%2F24%2Flinux%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%92%8Cvi%E3%80%81vi%E7%BC%96%E8%BE%91%E5%99%A8%2F</url>
     <content type="text"><![CDATA[命令行快捷键 常用快捷键 快捷键 用途 Esc + . 调出上一条命令的最后一个参数 Ctrl + a 切换到命令行的开始 Ctrl + e 切换到命令行的末尾 Ctrl + u 清除（剪切）光标之前的内容 Ctrl + k 清除（剪切）光标之后的内容 Ctrl + c 终止当前命令或脚本 Ctrl + l 清除屏幕内容，相当于clear Ctrl + d 退出当前shell，相当于exit，一个个删除光标后的字符 Ctrl + r 查找 Ctrl + shift + c 命令行复制内容 Ctrl + shift + v 命令行粘贴 内容 Tab 所有命令及路径补全功能，一般要多按几下 vi/vim编辑器常用操作 用法 用途 a或i或o 进入编辑模式 esc按键 退出编辑模式 ：wq 退出保存 ：wq! 退出并强制保存 :q 退出不保存 ：q! 强制退出不保存 G或：$ 光标移动到文件的最后一行 gg或：0 光标移动到文件的第一行 ^ 光标移动到当前行的开头 $ 光标移动到当前行的结尾 u 取消上一次动作 dd 删除一行 ndd 删除n行 d^ 删除当前光标之前到行首的所有字符。 d$ 删除当前光标处行尾的所有字符。 yy 复制一行 nyy 复制n行 yG 复制光标所在行到最后一行的所有数据。 y1G 复制光标所在行到第一行的所有数据。 y0 复制光标所在的那个字符到该行行首的所有数据。 y$ 复制光标所在的那个字符到该行行尾的所有数据。 p 粘贴一次 np 粘贴n次 / 向下搜索, 继续搜索n，反向搜索N ? 向上搜索, 继续搜索n，反向搜索N :set nu 显示行号 :set nonu 取消行号 :n或ngg 跳转到指定行 :%s/A/B/g 把A替换成B]]></content>
       <categories>
-        <category>Linux</category>
+        <category>Linux基础</category>
       </categories>
       <tags>
-        <tag>Linux</tag>
+        <tag>Linux基础</tag>
       </tags>
   </entry>
   <entry>

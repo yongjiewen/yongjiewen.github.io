@@ -46,7 +46,7 @@
     <link href="http://yoursite.com/2019/07/24/linux%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%92%8Cvi%E3%80%81vi%E7%BC%96%E8%BE%91%E5%99%A8/"/>
     <id>http://yoursite.com/2019/07/24/linux快捷键和vi、vi编辑器/</id>
     <published>2019-07-24T06:50:10.000Z</published>
-    <updated>2019-07-27T10:57:01.593Z</updated>
+    <updated>2019-07-28T03:31:12.337Z</updated>
     
     <content type="html"><![CDATA[<h1 id="命令行快捷键"><a href="#命令行快捷键" class="headerlink" title="命令行快捷键"></a><strong>命令行快捷键</strong></h1><ul><li>常用快捷键</li></ul><table><thead><tr><th>快捷键</th><th align="right">用途</th></tr></thead><tbody><tr><td>Esc  +  <strong>.</strong></td><td align="right">调出上一条命令的最后一个参数</td></tr><tr><td>Ctrl + a</td><td align="right">切换到命令行的开始</td></tr><tr><td>Ctrl + e</td><td align="right">切换到命令行的末尾</td></tr><tr><td>Ctrl + u</td><td align="right">清除（剪切）光标之前的内容</td></tr><tr><td>Ctrl + k</td><td align="right">清除（剪切）光标之后的内容</td></tr><tr><td>Ctrl + c</td><td align="right">终止当前命令或脚本</td></tr><tr><td>Ctrl + l</td><td align="right">清除屏幕内容，相当于clear</td></tr><tr><td>Ctrl + d</td><td align="right">退出当前shell，相当于exit，一个个删除光标后的字符</td></tr><tr><td>Ctrl + r</td><td align="right">查找</td></tr><tr><td>Ctrl + shift + c</td><td align="right">命令行复制内容</td></tr><tr><td>Ctrl + shift + v</td><td align="right">命令行粘贴 内容</td></tr><tr><td>Tab</td><td align="right">所有命令及路径补全功能，一般要多按几下</td></tr></tbody></table><h1 id="vi-vim编辑器"><a href="#vi-vim编辑器" class="headerlink" title="vi/vim编辑器"></a><strong>vi/vim编辑器</strong></h1><p>常用操作</p><table><thead><tr><th>用法</th><th align="right">用途</th></tr></thead><tbody><tr><td>a或i或o</td><td align="right">进入编辑模式</td></tr><tr><td>esc按键</td><td align="right">退出编辑模式</td></tr><tr><td>：wq</td><td align="right">退出保存</td></tr><tr><td>：wq!</td><td align="right">退出并强制保存</td></tr><tr><td>:q</td><td align="right">退出不保存</td></tr><tr><td>：q!</td><td align="right">强制退出不保存</td></tr><tr><td>G或：$</td><td align="right">光标移动到文件的最后一行</td></tr><tr><td>gg或：0</td><td align="right">光标移动到文件的第一行</td></tr><tr><td>^</td><td align="right">光标移动到当前行的开头</td></tr><tr><td>$</td><td align="right">光标移动到当前行的结尾</td></tr><tr><td>u</td><td align="right">取消上一次动作</td></tr><tr><td>dd</td><td align="right">删除一行</td></tr><tr><td>ndd</td><td align="right">删除n行</td></tr><tr><td>d^</td><td align="right">删除当前光标之前到行首的所有字符。</td></tr><tr><td>d$</td><td align="right">删除当前光标处行尾的所有字符。</td></tr><tr><td>yy</td><td align="right">复制一行</td></tr><tr><td>nyy</td><td align="right">复制n行</td></tr><tr><td>yG</td><td align="right">复制光标所在行到最后一行的所有数据。</td></tr><tr><td>y1G</td><td align="right">复制光标所在行到第一行的所有数据。</td></tr><tr><td>y0</td><td align="right">复制光标所在的那个字符到该行行首的所有数据。</td></tr><tr><td>y$</td><td align="right">复制光标所在的那个字符到该行行尾的所有数据。</td></tr><tr><td>p</td><td align="right">粘贴一次</td></tr><tr><td>np</td><td align="right">粘贴n次</td></tr><tr><td>/</td><td align="right">向下搜索, 继续搜索n，反向搜索N</td></tr><tr><td>?</td><td align="right">向上搜索, 继续搜索n，反向搜索N</td></tr><tr><td>:set nu</td><td align="right">显示行号</td></tr><tr><td>:set nonu</td><td align="right">取消行号</td></tr><tr><td>:n或ngg</td><td align="right">跳转到指定行</td></tr><tr><td>:%s/A/B/g</td><td align="right">把A替换成B</td></tr></tbody></table>]]></content>
     
@@ -63,10 +63,10 @@
     
     </summary>
     
-      <category term="Linux" scheme="http://yoursite.com/categories/Linux/"/>
+      <category term="Linux基础" scheme="http://yoursite.com/categories/Linux%E5%9F%BA%E7%A1%80/"/>
     
     
-      <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
+      <category term="Linux基础" scheme="http://yoursite.com/tags/Linux%E5%9F%BA%E7%A1%80/"/>
     
   </entry>
   
