@@ -1,0 +1,1563 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="python基础知识,">
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="杰克·🐂" type="application/atom+xml">
+
+
+
+
+
+
+<meta name="description" content="python介绍 python是一门编程语言，作为学习python的开始，需要事先搞明白：程的目的是什么？什么是编程语言？什么是编程？   Python是一种面向对象的解释型计算机程序设计语言，由荷人Guido van Rossum于1989年发明，第一个公开发行版发行于1991年。IEEE发布2017年编程语言排行榜：Python高居首位。 Python语言具有简洁性、易读性以及可扩展性，具有丰">
+<meta name="keywords" content="python基础知识">
+<meta property="og:type" content="article">
+<meta property="og:title" content="python入门介绍">
+<meta property="og:url" content="http://yoursite.com/2019/06/10/01-python入门介绍/index.html">
+<meta property="og:site_name" content="杰克·🐂">
+<meta property="og:description" content="python介绍 python是一门编程语言，作为学习python的开始，需要事先搞明白：程的目的是什么？什么是编程语言？什么是编程？   Python是一种面向对象的解释型计算机程序设计语言，由荷人Guido van Rossum于1989年发明，第一个公开发行版发行于1991年。IEEE发布2017年编程语言排行榜：Python高居首位。 Python语言具有简洁性、易读性以及可扩展性，具有丰">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://yoursite.com/images/%E5%9B%BE%E7%89%87/1.png">
+<meta property="og:image" content="http://yoursite.com/images/%E5%9B%BE%E7%89%87/2.png">
+<meta property="og:image" content="http://yoursite.com/images/%E5%9B%BE%E7%89%87/3.png">
+<meta property="og:image" content="http://yoursite.com/images/%E5%9B%BE%E7%89%87/4.png">
+<meta property="og:updated_time" content="2019-06-16T02:07:30.244Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="python入门介绍">
+<meta name="twitter:description" content="python介绍 python是一门编程语言，作为学习python的开始，需要事先搞明白：程的目的是什么？什么是编程语言？什么是编程？   Python是一种面向对象的解释型计算机程序设计语言，由荷人Guido van Rossum于1989年发明，第一个公开发行版发行于1991年。IEEE发布2017年编程语言排行榜：Python高居首位。 Python语言具有简洁性、易读性以及可扩展性，具有丰">
+<meta name="twitter:image" content="http://yoursite.com/images/%E5%9B%BE%E7%89%87/1.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2019/06/10/01-python入门介绍/">
+
+
+
+
+
+  <title>python入门介绍 | 杰克·🐂</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">杰克·🐂</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">每天坚持进步一小步</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/10/01-python入门介绍/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="杰克">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/主页.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="杰克·🐂">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">python入门介绍</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-06-10T21:40:00+08:00">
+                2019-06-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/python基础知识/" itemprop="url" rel="index">
+                    <span itemprop="name">python基础知识</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="python介绍"><a href="#python介绍" class="headerlink" title="python介绍"></a><strong>python介绍</strong></h1><ul>
+<li>python是一门编程语言，作为学习python的开始，需要事先搞明白：<br>程的目的是什么？什么是编程语言？什么是编程？</li>
+</ul>
+<ol>
+<li>Python是一种面向对象的解释型计算机程序设计语言，由荷<br>人Guido van Rossum于1989年发明，第一个公开发行版发行于1991年。IEEE发布2017年编程语言排行榜：Python高居首位。</li>
+<li>Python语言具有简洁性、易读性以及可扩展性，具有丰富和强大的库<br>它常被昵称为胶水语言，能够把用其他语言制作的各种模块（尤其是C/C++）很轻松地联结在一起。</li>
+<li>已被逐渐广泛应用于系统管理任务的处理和Web编程，大数据处理，<br>学运算，Web编程，用户界面，游戏开发中。</li>
+<li>从卡耐基梅隆大学的编程基础、麻省理工学院到中小学的编入课，Python越来越多被采纳和使用。<h1 id="Python语言的特点"><a href="#Python语言的特点" class="headerlink" title="Python语言的特点"></a><strong>Python语言的特点</strong></h1></li>
+</ol>
+<ul>
+<li>简单、高级、面向对象、可扩展性、免费开源、可移植性、丰富的库、可嵌入性<h1 id="Python语言版本和开发环境"><a href="#Python语言版本和开发环境" class="headerlink" title="Python语言版本和开发环境"></a><strong>Python语言版本和开发环境</strong></h1><h2 id="2个主要版本：Python-2和Python-3"><a href="#2个主要版本：Python-2和Python-3" class="headerlink" title="2个主要版本：Python 2和Python 3"></a><em>2个主要版本：Python 2和Python 3</em></h2></li>
+<li>Python 3在设计时，没有考虑向下兼容，Python3于2008年发布，是一个较大的升级。但早期Python版本设计的程序不能在Python3上运行。<h2 id="Python语言的集成开发环境"><a href="#Python语言的集成开发环境" class="headerlink" title="Python语言的集成开发环境"></a><em>Python语言的集成开发环境</em></h2></li>
+<li>IDLE（内置）、PyChram、PythonWin、Eclipse + Pydev插件、Visual Studio + Python Tools for Visual Studio<h2 id="Python语言的实现"><a href="#Python语言的实现" class="headerlink" title="Python语言的实现"></a><em>Python语言的实现</em></h2></li>
+<li>python解释器<h1 id="Python安装下载"><a href="#Python安装下载" class="headerlink" title="Python安装下载"></a><strong>Python安装下载</strong></h1><a href="https://www.python.org/downloads" target="_blank" rel="noopener">python官网</a>:<a href="https://www.python.org/downloads/windows/" target="_blank" rel="noopener">https://www.python.org/downloads/windows/</a><br>分别选择要安装的版本以及自己的操作系统对应的<br><img src="/images/%E5%9B%BE%E7%89%87/1.png" alt><br><img src="/images/%E5%9B%BE%E7%89%87/2.png" alt></li>
+<li>测试是否安装成功</li>
+<li>打开运行框&gt;&gt;&gt;&gt; 输入cmd回车  &gt; &gt;&gt;&gt;命令行中输入 python     能进入交互式环境则安装成功，里面会显示我们安装的版本<br><img src="/images/%E5%9B%BE%E7%89%87/3.png" alt><h1 id="运行Python集成开发环境IDLE"><a href="#运行Python集成开发环境IDLE" class="headerlink" title="运行Python集成开发环境IDLE"></a><strong>运行Python集成开发环境IDLE</strong></h1><h2 id="运行IDLE环境"><a href="#运行IDLE环境" class="headerlink" title="运行IDLE环境"></a><em>运行IDLE环境</em></h2>安装完成后在程序里会增加一个IDLE,运行IDLE环境，使用集成开发环境IDLE解释执行Python语句，输入print(‘Hello world’) 会运行输出Hello world。<br><img src="/images/%E5%9B%BE%E7%89%87/4.png" alt><h2 id="关闭IDLE环境"><a href="#关闭IDLE环境" class="headerlink" title="关闭IDLE环境"></a><em>关闭IDLE环境</em></h2>输入quit()命令；或者直接关闭IDLE窗口，均可以关闭Python解释器</li>
+</ul>
+<h1 id="变量"><a href="#变量" class="headerlink" title="变量"></a><strong>变量</strong></h1><h2 id="什么是变量"><a href="#什么是变量" class="headerlink" title="什么是变量"></a><em>什么是变量</em></h2><p>变量即变化的量，核心是“变”与“量”二字，变即变化，量即衡量状态。</p>
+<h2 id="为什么要有变量"><a href="#为什么要有变量" class="headerlink" title="为什么要有变量"></a><em>为什么要有变量</em></h2><p>程序执行的本质就是一系列状态的变化，变是程序执行的直接体现，所以我们需要有一种机制能够反映或者说是保存下来程序执行时状态以及状态的变化。</p>
+<h2 id="如何定义变量"><a href="#如何定义变量" class="headerlink" title="如何定义变量"></a><em>如何定义变量</em></h2><ul>
+<li>变量名，等号，变量值<br>每个变量在内存中创建，都包括变量的标识，名称和数据这些信息。<br>每个变量在使用前都必须赋值，变量赋值以后该变量才会被创建。<br>等号（=）用来给变量赋值。<br>等号（=）运算符左边是一个变量名,等号（=）运算符右边是存储在变量中的值。例如：<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">name</span>=<span class="string">'jack'</span></span><br><span class="line"><span class="attr">sex</span>=<span class="string">'male'</span></span><br><span class="line"><span class="attr">age</span>=<span class="number">20</span></span><br><span class="line"><span class="attr">level</span>=<span class="number">10</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h2 id="变量的定义规范"><a href="#变量的定义规范" class="headerlink" title="变量的定义规范"></a><em>变量的定义规范</em></h2><ol>
+<li>变量名只能是 字母、数字或下划线的任意组合</li>
+<li>变量名的开头不能是数字</li>
+<li>关键字不能声明为变量名[‘and’, ‘as’, ‘assert’, ‘break’, ‘class’, ‘continue’, ‘def’, ‘del’, ‘elif’, ‘else’, ‘except’, ‘exec’, ‘finally’, ‘for’, ‘from’, ‘global’, ‘if’, ‘import’, ‘in’, ‘is’, ‘lambda’, ‘not’, ‘or’, ‘pass’, ‘print’, ‘raise’, ‘return’, ‘try’, ‘while’, ‘with’, ‘yield’]</li>
+<li>尽量避免使用中文，拼音命名</li>
+</ol>
+<h1 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a><strong>运算符</strong></h1><h2 id="什么是运算符？"><a href="#什么是运算符？" class="headerlink" title="什么是运算符？"></a><em>什么是运算符？</em></h2><ul>
+<li>举个简单的例子 4 +5 = 9 。 例子中，4 和 5 被称为操作数，”+” 称为运算符。<br>Python语言支持以下类型的运算符:</li>
+</ul>
+<ol>
+<li>算术运算符</li>
+<li>比较（关系）运算符</li>
+<li>赋值运算符</li>
+<li>逻辑运算符</li>
+<li>位运算符</li>
+<li>成员运算符</li>
+<li>身份运算符</li>
+<li>运算符优先级</li>
+</ol>
+<h2 id="算术运算符"><a href="#算术运算符" class="headerlink" title="算术运算符"></a><em>算术运算符</em></h2><p>以下假设变量： a=10，b=20：</p>
+<table>
+<thead>
+<tr>
+<th>运算符</th>
+<th align="center">描述</th>
+<th align="right">实例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>+</td>
+<td align="center">加 - 两个对象相加</td>
+<td align="right">a + b 输出结果 30</td>
+</tr>
+<tr>
+<td>-</td>
+<td align="center">减 - 得到负数或是一个数减去另一个数</td>
+<td align="right">a - b 输出结果 -10</td>
+</tr>
+<tr>
+<td>*</td>
+<td align="center">乘 - 两个数相乘或是返回一个被重复若干次的字符串</td>
+<td align="right">a * b 输出结果 200</td>
+</tr>
+<tr>
+<td>/</td>
+<td align="center">除 - x除以y</td>
+<td align="right">b / a 输出结果 2</td>
+</tr>
+<tr>
+<td>%</td>
+<td align="center">取模 - 返回除法的余数</td>
+<td align="right">b % a 输出结果 0</td>
+</tr>
+<tr>
+<td>**</td>
+<td align="center">幂 - 返回x的y次幂</td>
+<td align="right">a**b 为10的20次方， 输出结果 100000000000000000000</td>
+</tr>
+<tr>
+<td>//</td>
+<td align="center">取整除 - 返回商的整数部分（向下取整）</td>
+<td align="right">&gt;&gt;&gt; 9//24&gt;&gt;&gt; -9//2-5</td>
+</tr>
+</tbody></table>
+<h2 id="比较运算符"><a href="#比较运算符" class="headerlink" title="比较运算符"></a><em>比较运算符</em></h2><p>以下假设变量a为10，变量b为20：</p>
+<table>
+<thead>
+<tr>
+<th>运算符</th>
+<th align="center">描述</th>
+<th align="right">实例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>==</td>
+<td align="center">等于 - 比较对象是否相等</td>
+<td align="right">(a == b) 返回 False。</td>
+</tr>
+<tr>
+<td>!=</td>
+<td align="center">不等于 - 比较两个对象是否不相等</td>
+<td align="right">(a != b) 返回 True.</td>
+</tr>
+<tr>
+<td>&lt;&gt;</td>
+<td align="center">不等于 - 比较两个对象是否不相等</td>
+<td align="right">(a &lt;&gt; b) 返回 True。这个运算符类似 != 。</td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td align="center">大于 - 返回x是否大于y (a &gt; b)</td>
+<td align="right">返回 False。</td>
+</tr>
+<tr>
+<td>&lt;</td>
+<td align="center">小于 - 返回x是否小于y。所有比较运算符返回1表示真，返回0表示假。这分别与特殊的变量True和False等价。</td>
+<td align="right">(a &lt; b) 返回 True。</td>
+</tr>
+<tr>
+<td>&gt;=</td>
+<td align="center">大于等于 - 返回x是否大于等于y。</td>
+<td align="right">(a &gt;= b) 返回 False。</td>
+</tr>
+<tr>
+<td>&lt;=</td>
+<td align="center">小于等于 - 返回x是否小于等于y。</td>
+<td align="right">(a &lt;= b) 返回 True。</td>
+</tr>
+</tbody></table>
+<h2 id="赋值运算符"><a href="#赋值运算符" class="headerlink" title="赋值运算符"></a><em>赋值运算符</em></h2><p>以下假设变量a为10，变量b为20：</p>
+<table>
+<thead>
+<tr>
+<th>运算符</th>
+<th align="center">描述</th>
+<th align="right">实例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>=</td>
+<td align="center">简单的赋值运算符</td>
+<td align="right">c = a + b 将 a + b 的运算结果赋值为 c</td>
+</tr>
+<tr>
+<td>+=</td>
+<td align="center">加法赋值运算符</td>
+<td align="right">c += a 等效于 c = c + a</td>
+</tr>
+<tr>
+<td>-=</td>
+<td align="center">减法赋值运算符</td>
+<td align="right">c -= a 等效于 c = c - a</td>
+</tr>
+<tr>
+<td>*=</td>
+<td align="center">乘法赋值运算符</td>
+<td align="right">c *= a 等效于 c = c * a</td>
+</tr>
+<tr>
+<td>/=</td>
+<td align="center">除法赋值运算符</td>
+<td align="right">c /= a 等效于 c = c / a</td>
+</tr>
+<tr>
+<td>%=</td>
+<td align="center">取模赋值运算符</td>
+<td align="right">c %= a 等效于 c = c % a</td>
+</tr>
+<tr>
+<td>**=</td>
+<td align="center">幂赋值运算符</td>
+<td align="right">c <strong>= a 等效于 c = c</strong> a</td>
+</tr>
+<tr>
+<td>//=</td>
+<td align="center">取整除赋值运算符</td>
+<td align="right">c //= a 等效于 c = c // a</td>
+</tr>
+</tbody></table>
+<h2 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a><em>逻辑运算符</em></h2><p>以下假设变量 a 为 10, b为 20:</p>
+<table>
+<thead>
+<tr>
+<th>运算符</th>
+<th align="center">逻辑表达式</th>
+<th align="center">描述</th>
+<th align="right">实例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>and</td>
+<td align="center">x and y</td>
+<td align="center">布尔”与” - 如果 x 为 False，x and y 返回 False，否则它返回 y 的计算值。</td>
+<td align="right">(a and b) 返回 20。</td>
+</tr>
+<tr>
+<td>or</td>
+<td align="center">x or y</td>
+<td align="center">布尔”或” - 如果 x 是非 0，它返回 x 的值，否则它返回 y 的计算值。</td>
+<td align="right">(a or b) 返回 10。</td>
+</tr>
+<tr>
+<td>not</td>
+<td align="center">not x</td>
+<td align="center">布尔”非” - 如果 x 为 True，返回 False 。如果 x 为 False，它返回 True。</td>
+<td align="right">not(a and b) 返回 False</td>
+</tr>
+</tbody></table>
+<h2 id="位运算符"><a href="#位运算符" class="headerlink" title="位运算符"></a><em>位运算符</em></h2><p>按位运算符是把数字看作二进制来进行计算的。Python中的按位运算法则如下：<br>下表中变量 a 为 60，b 为 13，二进制格式如下：</p>
+<figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">a =   <span class="number">0011</span> <span class="number">1100</span></span><br><span class="line">b =   <span class="number">0000</span> <span class="number">1101</span></span><br><span class="line">-----------------</span><br><span class="line">a&amp;b = <span class="number">0000</span> <span class="number">1100</span></span><br><span class="line">a|b = <span class="number">0011</span> <span class="number">1101</span></span><br><span class="line">a^b = <span class="number">0011</span> <span class="number">0001</span></span><br><span class="line">~a  = <span class="number">1100</span> <span class="number">0011</span></span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>运算符</th>
+<th align="center">描述</th>
+<th align="right">实例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>&amp;</td>
+<td align="center">按位与运算符：参与运算的两个值,如果两个相应位都为1,则该位的结果为1,否则为0</td>
+<td align="right">(a &amp; b) 输出结果 12 ，二进制解释： 0000 1100</td>
+</tr>
+<tr>
+<td>|</td>
+<td align="center">按位或运算符：只要对应的二个二进位有一个为1时，结果位就为1。</td>
+<td align="right">(a | b) 输出结果 61 ，二进制解释： 0011 1101</td>
+</tr>
+<tr>
+<td>^</td>
+<td align="center">按位异或运算符：当两对应的二进位相异时，结果为1</td>
+<td align="right">(a ^ b) 输出结果 49 ，二进制解释： 0011 0001</td>
+</tr>
+<tr>
+<td>~</td>
+<td align="center">按位取反运算符：对数据的每个二进制位取反,即把1变为0,把0变为1 。~x 类似于 -x-1</td>
+<td align="right">(~a ) 输出结果 -61 ，二进制解释： 1100 0011，在一个有符号二进制数的补码形式。</td>
+</tr>
+<tr>
+<td>&lt;&lt;</td>
+<td align="center">左移动运算符：运算数的各二进位全部左移若干位，由 &lt;&lt; 右边的数字指定了移动的位数，高位丢弃，低位补0。</td>
+<td align="right">a &lt;&lt; 2 输出结果 240 ，二进制解释： 1111 0000</td>
+</tr>
+<tr>
+<td>&gt;&gt;</td>
+<td align="center">右移动运算符：把”&gt;&gt;”左边的运算数的各二进位全部右移若干位，&gt;&gt; 右边的数字指定了移动的位数</td>
+<td align="right">a &gt;&gt; 2 输出结果 15 ，二进制解释： 0000 1111</td>
+</tr>
+</tbody></table>
+<h2 id="成员运算符"><a href="#成员运算符" class="headerlink" title="成员运算符"></a><em>成员运算符</em></h2><p>除了以上的一些运算符之外，Python还支持成员运算符，测试实例中包含了一系列的成员，包括字符串，列表或元组。</p>
+<table>
+<thead>
+<tr>
+<th>运算符</th>
+<th align="center">描述</th>
+<th align="right">实例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>in</td>
+<td align="center">如果在指定的序列中找到值返回 True，否则返回 False。</td>
+<td align="right">x 在 y 序列中 , 如果 x 在 y 序列中返回 True。</td>
+</tr>
+<tr>
+<td>not in</td>
+<td align="center">如果在指定的序列中没有找到值返回 True，否则返回 False。</td>
+<td align="right">x 不在 y 序列中 , 如果 x 不在 y 序列中返回 True。</td>
+</tr>
+</tbody></table>
+<h2 id="身份运算符"><a href="#身份运算符" class="headerlink" title="身份运算符"></a><em>身份运算符</em></h2><p>身份运算符用于比较两个对象的存储单元</p>
+<table>
+<thead>
+<tr>
+<th>运算符</th>
+<th align="center">描述</th>
+<th align="right">实例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>is</td>
+<td align="center">is 是判断两个标识符是不是引用自一个对象</td>
+<td align="right">x is y, 类似 id(x) == id(y) , 如果引用的是同一个对象则返回 True，否则返回 False</td>
+</tr>
+<tr>
+<td>is not</td>
+<td align="center">is not 是判断两个标识符是不是引用自不同对象</td>
+<td align="right">x is not y ， 类似 id(a) != id(b)。如果引用的不是同一个对象则返回结果 True，否则返回 False。</td>
+</tr>
+</tbody></table>
+<p><strong>注： id() 函数用于获取对象内存地址。<br>is 与 == 区别：<br>is 用于判断两个变量引用对象是否为同一个(同一块内存空间)， == 用于判断引用变量的值是否相等</strong></p>
+<h2 id="运算符优先级"><a href="#运算符优先级" class="headerlink" title="运算符优先级"></a><em>运算符优先级</em></h2><p>以下表格列出了从最高到最低优先级的所有运算符：</p>
+<table>
+<thead>
+<tr>
+<th>运算符</th>
+<th align="right">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>**</td>
+<td align="right">指数 (最高优先级)</td>
+</tr>
+<tr>
+<td>~ + -</td>
+<td align="right">按位翻转, 一元加号和减号 (最后两个的方法名为 +@ 和 -@)</td>
+</tr>
+<tr>
+<td>* / % //</td>
+<td align="right">乘，除，取模和取整除</td>
+</tr>
+<tr>
+<td>+ -</td>
+<td align="right">加法减法</td>
+</tr>
+<tr>
+<td>&gt;&gt; &lt;&lt;</td>
+<td align="right">右移，左移运算符</td>
+</tr>
+<tr>
+<td>&amp;</td>
+<td align="right">位 ‘AND’</td>
+</tr>
+<tr>
+<td>^ |</td>
+<td align="right">位运算符</td>
+</tr>
+<tr>
+<td>&lt;= &lt; &gt; &gt;=</td>
+<td align="right">比较运算符</td>
+</tr>
+<tr>
+<td>&lt;&gt; == !=</td>
+<td align="right">等于运算符</td>
+</tr>
+<tr>
+<td>= %= /= //= -= += <em>= *</em>=</td>
+<td align="right">赋值运算符</td>
+</tr>
+<tr>
+<td>is is not</td>
+<td align="right">身份运算符</td>
+</tr>
+<tr>
+<td>in not in</td>
+<td align="right">成员运算符</td>
+</tr>
+<tr>
+<td>not and or</td>
+<td align="right">逻辑运算符</td>
+</tr>
+</tbody></table>
+<h1 id="注释"><a href="#注释" class="headerlink" title="注释"></a><strong>注释</strong></h1><p>随着学习的深入，我们的代码会越来越复杂化，加上注释方便自己以后和别人调用看懂，增加代码的可读性</p>
+<ul>
+<li>代码注释分单行和多行注释， 单行注释用#，多行注释可以用三对双引号””” “””</li>
+</ul>
+<p>更新中。。。</p>
+
+      
+    </div>
+    
+    
+    
+	<div>
+		
+			<div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+
+
+		
+	</div>
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>您的支持将是我创作更新的动力！谢谢大家捧场！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wx.png" alt="杰克 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/zfb.png" alt="杰克 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/python基础知识/" <i class="fa fa-tag"> python基础知识</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/06/12/02-python数据类型/" rel="prev" title="python数据类型">
+                python数据类型 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/主页.jpg" alt="杰克">
+            
+              <p class="site-author-name" itemprop="name">杰克</p>
+              <p class="site-description motion-element" itemprop="description">不能放纵自己过一个烂透的人生，不安于现状，不断探讨研究。</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">14</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="http://github.com/yongjiewen" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:wen_yongjie@126.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#python介绍"><span class="nav-number">1.</span> <span class="nav-text">python介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Python语言的特点"><span class="nav-number">2.</span> <span class="nav-text">Python语言的特点</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Python语言版本和开发环境"><span class="nav-number">3.</span> <span class="nav-text">Python语言版本和开发环境</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2个主要版本：Python-2和Python-3"><span class="nav-number">3.1.</span> <span class="nav-text">2个主要版本：Python 2和Python 3</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Python语言的集成开发环境"><span class="nav-number">3.2.</span> <span class="nav-text">Python语言的集成开发环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Python语言的实现"><span class="nav-number">3.3.</span> <span class="nav-text">Python语言的实现</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Python安装下载"><span class="nav-number">4.</span> <span class="nav-text">Python安装下载</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#运行Python集成开发环境IDLE"><span class="nav-number">5.</span> <span class="nav-text">运行Python集成开发环境IDLE</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#运行IDLE环境"><span class="nav-number">5.1.</span> <span class="nav-text">运行IDLE环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关闭IDLE环境"><span class="nav-number">5.2.</span> <span class="nav-text">关闭IDLE环境</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#变量"><span class="nav-number">6.</span> <span class="nav-text">变量</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是变量"><span class="nav-number">6.1.</span> <span class="nav-text">什么是变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么要有变量"><span class="nav-number">6.2.</span> <span class="nav-text">为什么要有变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何定义变量"><span class="nav-number">6.3.</span> <span class="nav-text">如何定义变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#变量的定义规范"><span class="nav-number">6.4.</span> <span class="nav-text">变量的定义规范</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#运算符"><span class="nav-number">7.</span> <span class="nav-text">运算符</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是运算符？"><span class="nav-number">7.1.</span> <span class="nav-text">什么是运算符？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#算术运算符"><span class="nav-number">7.2.</span> <span class="nav-text">算术运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#比较运算符"><span class="nav-number">7.3.</span> <span class="nav-text">比较运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#赋值运算符"><span class="nav-number">7.4.</span> <span class="nav-text">赋值运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#逻辑运算符"><span class="nav-number">7.5.</span> <span class="nav-text">逻辑运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#位运算符"><span class="nav-number">7.6.</span> <span class="nav-text">位运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#成员运算符"><span class="nav-number">7.7.</span> <span class="nav-text">成员运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#身份运算符"><span class="nav-number">7.8.</span> <span class="nav-text">身份运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#运算符优先级"><span class="nav-number">7.9.</span> <span class="nav-text">运算符优先级</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#注释"><span class="nav-number">8.</span> <span class="nav-text">注释</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        
+<div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">杰克</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/clicklove.js"></script>
+ <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"log":false});</script></body>
+
+
+</html>

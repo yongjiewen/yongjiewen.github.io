@@ -1,0 +1,1608 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="python基础知识,">
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="杰克·🐂" type="application/atom+xml">
+
+
+
+
+
+
+<meta name="description" content="数据类型什么是数据？ x=18，18是我们想要存储的数据为何数据要分不同的类型 数据是用来表示状态的，不同的状态就应该用不同的类型的数据去表示数据类型 可变类型与不可变类型 可变：在id不变的情况，值可以改变不可变：值不变，id不变     数字（整形，长整形，浮点型，复数） 字符串 字节串：在介绍字符编码时介绍字节bytes类型 列表 元组 字典 集合 布尔类型bool：True，False布尔">
+<meta name="keywords" content="python基础知识">
+<meta property="og:type" content="article">
+<meta property="og:title" content="python数据类型">
+<meta property="og:url" content="http://yoursite.com/2019/06/12/02-python数据类型/index.html">
+<meta property="og:site_name" content="杰克·🐂">
+<meta property="og:description" content="数据类型什么是数据？ x=18，18是我们想要存储的数据为何数据要分不同的类型 数据是用来表示状态的，不同的状态就应该用不同的类型的数据去表示数据类型 可变类型与不可变类型 可变：在id不变的情况，值可以改变不可变：值不变，id不变     数字（整形，长整形，浮点型，复数） 字符串 字节串：在介绍字符编码时介绍字节bytes类型 列表 元组 字典 集合 布尔类型bool：True，False布尔">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://yoursite.com/images/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/%E5%AD%97%E7%AC%A6%E4%B8%B2/1.png">
+<meta property="og:image" content="http://yoursite.com/images/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/%E5%AD%97%E7%AC%A6%E4%B8%B2/2.png">
+<meta property="og:updated_time" content="2019-06-22T13:11:22.786Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="python数据类型">
+<meta name="twitter:description" content="数据类型什么是数据？ x=18，18是我们想要存储的数据为何数据要分不同的类型 数据是用来表示状态的，不同的状态就应该用不同的类型的数据去表示数据类型 可变类型与不可变类型 可变：在id不变的情况，值可以改变不可变：值不变，id不变     数字（整形，长整形，浮点型，复数） 字符串 字节串：在介绍字符编码时介绍字节bytes类型 列表 元组 字典 集合 布尔类型bool：True，False布尔">
+<meta name="twitter:image" content="http://yoursite.com/images/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/%E5%AD%97%E7%AC%A6%E4%B8%B2/1.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2019/06/12/02-python数据类型/">
+
+
+
+
+
+  <title>python数据类型 | 杰克·🐂</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">杰克·🐂</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">每天坚持进步一小步</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/12/02-python数据类型/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="杰克">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/主页.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="杰克·🐂">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">python数据类型</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-06-12T21:40:00+08:00">
+                2019-06-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/python基础知识/" itemprop="url" rel="index">
+                    <span itemprop="name">python基础知识</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a><strong>数据类型</strong></h1><h2 id="什么是数据？"><a href="#什么是数据？" class="headerlink" title="什么是数据？"></a><em>什么是数据？</em></h2><ul>
+<li>x=18，18是我们想要存储的数据<h2 id="为何数据要分不同的类型"><a href="#为何数据要分不同的类型" class="headerlink" title="为何数据要分不同的类型"></a><em>为何数据要分不同的类型</em></h2></li>
+<li>数据是用来表示状态的，不同的状态就应该用不同的类型的数据去表示<h2 id="数据类型-1"><a href="#数据类型-1" class="headerlink" title="数据类型"></a><em>数据类型</em></h2></li>
+<li>可变类型与不可变类型<blockquote>
+<p>可变：在id不变的情况，值可以改变<br>不可变：值不变，id不变</p>
+</blockquote>
+</li>
+</ul>
+<ol>
+<li>数字（整形，长整形，浮点型，复数）</li>
+<li>字符串</li>
+<li>字节串：在介绍字符编码时介绍字节bytes类型</li>
+<li>列表</li>
+<li>元组</li>
+<li>字典</li>
+<li>集合</li>
+<li>布尔类型bool：True，False<h1 id="布尔类型bool"><a href="#布尔类型bool" class="headerlink" title="布尔类型bool"></a><strong>布尔类型bool</strong></h1></li>
+</ol>
+<ul>
+<li>所有数据类型，自带布尔值<blockquote>
+<p>#只有三种类型的值为False<br>  0<br>  None<br>  空:’’,[],{}<br>  其余全部为真（True）</p>
+</blockquote>
+</li>
+</ul>
+<h1 id="数字"><a href="#数字" class="headerlink" title="数字"></a><strong>数字</strong></h1><h2 id="整形int"><a href="#整形int" class="headerlink" title="整形int"></a><em>整形int</em></h2><ul>
+<li>作用：用来表示年龄，等级，证件号等整数相关的<blockquote>
+<p>定义：　age=18          #实质age=int(18)</p>
+</blockquote>
+</li>
+</ul>
+<p><img src="/images/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/%E5%AD%97%E7%AC%A6%E4%B8%B2/1.png" alt></p>
+<h2 id="浮点型float"><a href="#浮点型float" class="headerlink" title="浮点型float"></a><em>浮点型float</em></h2><ul>
+<li>作用：用来表示工资，身高，体重参数等有小数相关的<blockquote>
+<p>定义： salary=180.25       #实质salary=float(180.25)</p>
+</blockquote>
+</li>
+</ul>
+<p><img src="/images/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/%E5%AD%97%E7%AC%A6%E4%B8%B2/2.png" alt></p>
+<h1 id="字符串-str"><a href="#字符串-str" class="headerlink" title="字符串(str)"></a><strong>字符串(str)</strong></h1><ul>
+<li>作用：用来表示名字、性别、地址等信息</li>
+<li>定义：在单引号、双引号或者三引号内，由一串字符组成<blockquote>
+<p>name=’jack’    #name=str(‘jack’)</p>
+</blockquote>
+</li>
+</ul>
+<p><strong>基本使用</strong></p>
+<h2 id="1、按索引取值-正向取-反向取-：只能取"><a href="#1、按索引取值-正向取-反向取-：只能取" class="headerlink" title="1、按索引取值(正向取+反向取) ：只能取"></a><em>1、按索引取值(正向取+反向取) ：只能取</em></h2><ul>
+<li>索引取值从0开始算起<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;</span>&gt;name=<span class="string">'Hello jack'</span></span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;print(name[<span class="number">0</span>])</span><br><span class="line">H</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;print(name[<span class="number">6</span>])</span><br><span class="line">o</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;print(name[-<span class="number">1</span>])</span><br><span class="line">k</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h2 id="2、切片-顾头不顾尾，步长"><a href="#2、切片-顾头不顾尾，步长" class="headerlink" title="2、切片(顾头不顾尾，步长)"></a><em>2、切片(顾头不顾尾，步长)</em></h2><ul>
+<li>取出我们想要部分的字符串<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;</span>&gt;res=<span class="string">'my name is jack'</span></span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;print(res[<span class="number">0</span><span class="symbol">:</span><span class="number">7</span>])</span><br><span class="line">my name</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;print(res[<span class="number">3</span><span class="symbol">:</span><span class="number">7</span>])</span><br><span class="line">name</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;print(res[<span class="number">0</span><span class="symbol">:</span><span class="number">7</span><span class="symbol">:</span><span class="number">2</span>])   <span class="comment">#步长：每几个中取出一个</span></span><br><span class="line">m ae</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h2 id="3、长度len"><a href="#3、长度len" class="headerlink" title="3、长度len"></a><em>3、长度len</em></h2><ul>
+<li>统计字符的长度个数len(str)<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;</span>&gt;res=<span class="string">'my name is jack'</span></span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;print(len(res))</span><br><span class="line"><span class="number">15</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h2 id="4、移除空白strip"><a href="#4、移除空白strip" class="headerlink" title="4、移除空白strip"></a><em>4、移除空白strip</em></h2><ul>
+<li>strip() 方法用于移除字符串头尾指定的字符（默认为空格）或字符序列。<br>注意：该方法只能删除开头或是结尾的字符，不能删除中间部分的字符。<br>语法：str.strip(str=’’)str – 去除符，默认为所有的空字符，包括空格、换行(\n)、制表符(\t)等</li>
+</ul>
+<ol>
+<li>str.stiip()默认不加参数为去除两边空格</li>
+<li>str.lstrip()默认不加参数为去除左边空格</li>
+<li>str.rstrip()默认不加参数为去除右边空格</li>
+</ol>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;</span>&gt;name=<span class="string">'##jack####'</span></span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;print(name.strip(<span class="string">'#'</span>))    <span class="comment">#去除两边的符号</span></span><br><span class="line">jack</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;print(name.lstrip(<span class="string">'#'</span>))     <span class="comment">#去除左边的符号</span></span><br><span class="line">jack<span class="comment">####</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;print(name.rstrip(<span class="string">'#'</span>))    <span class="comment">#去除右边的符号</span></span><br><span class="line"><span class="comment">##jack</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;name=<span class="string">'    jack       '</span></span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;print(name.strip())      <span class="comment">#去除两边的空格</span></span><br><span class="line">jack</span><br></pre></td></tr></table></figure>
+
+<h2 id="5、切分split"><a href="#5、切分split" class="headerlink" title="5、切分split"></a><em>5、切分split</em></h2><ul>
+<li>split() 通过指定分隔符对字符串进行切片<br>语法：str.split(str=’’,num)<br>str – 分隔符，默认为所有的空字符，包括空格、换行(\n)、制表符(\t)等。<br>num – 分割次数。默认为 -1, 即分隔所有。</li>
+</ul>
+<ol>
+<li>用法   str.split()从左边开始像右边切除将其分成一列表的形式</li>
+<li>用法   str.rsplit()从右边开始像左边切除将其分成一列表的形式<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;</span>&gt;res1=<span class="string">'jack:18:age'</span></span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;res2=res1.split(<span class="string">':'</span>)    <span class="comment">#以：形式切除所有位置</span></span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;res3=res1.split(<span class="string">':'</span>,<span class="number">1</span>)    <span class="comment">#切除左边一个位置</span></span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;res4=res1.rsplit(<span class="string">':'</span>,<span class="number">1</span>)     <span class="comment">#切除右边一个位置</span></span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;print(res2)</span><br><span class="line">[<span class="string">'jack'</span>, <span class="string">'18'</span>, <span class="string">'age'</span>]</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;print(res3)</span><br><span class="line">[<span class="string">'jack'</span>, <span class="string">'18:age'</span>]</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;print(res4)</span><br><span class="line">[<span class="string">'jack:18'</span>, <span class="string">'age'</span>]</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h2 id="6、连接join"><a href="#6、连接join" class="headerlink" title="6、连接join"></a><em>6、连接join</em></h2><ul>
+<li>join() 方法用于将序列中的元素以指定的字符连接生成一个新的字符串。<br>语法：str.join(sequence)        sequence – 要连接的元素序列。</li>
+</ul>
+<ol>
+<li>用法：  join方法传入的列表必须只包含str类型的元素:   ‘’.join(str)<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;</span>&gt;l=[<span class="string">'jack'</span>, <span class="string">'18'</span>, <span class="string">'age'</span>]</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;res=<span class="string">''</span>.join(l)    <span class="comment">#以空格将其连接成字符串</span></span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;print(res)</span><br><span class="line">jack18age</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;res2=<span class="string">':'</span>.join(l)     <span class="comment">#以：将其连接成字符串</span></span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;print(res2)</span><br><span class="line"><span class="symbol">jack:</span><span class="number">18</span><span class="symbol">:age</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h2 id="7、成员运算in和not-in"><a href="#7、成员运算in和not-in" class="headerlink" title="7、成员运算in和not in"></a><em>7、成员运算in和not in</em></h2><ul>
+<li>判断元素在不在其里面<br>在里面则返回True ,否则返回False<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt;res=<span class="string">'my name is jack'</span></span><br><span class="line">&gt;&gt;&gt;print(<span class="string">'jack'</span> <span class="keyword">in</span> res)  </span><br><span class="line"><span class="literal">True</span></span><br><span class="line">&gt;&gt;&gt;print(<span class="string">'jack'</span>  <span class="keyword">not</span> <span class="keyword">in</span> res)</span><br><span class="line"><span class="literal">False</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h2 id="8、-format-格式化输出"><a href="#8、-format-格式化输出" class="headerlink" title="8、 format 格式化输出"></a><em>8、 format 格式化输出</em></h2><ul>
+<li>str.format()，它增强了字符串格式化的功能。<br>基本语法是通过 {} 和 : 来代替以前的 % 。<br>format 函数可以接受不限个参数，位置可以不按顺序。</li>
+</ul>
+<h3 id="按默认位置传值"><a href="#按默认位置传值" class="headerlink" title="按默认位置传值"></a>按默认位置传值</h3><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt;s1='<span class="keyword">my</span> <span class="built_in">name</span> <span class="keyword">is</span> %s <span class="keyword">my</span> age <span class="keyword">is</span> %s' %('jack',<span class="number">18</span>)</span><br><span class="line">&gt;&gt;&gt;s2='<span class="keyword">my</span> <span class="built_in">name</span> <span class="keyword">is</span> &#123;&#125; <span class="keyword">my</span> age <span class="keyword">is</span> &#123;&#125;'.format('jack',<span class="number">18</span>)</span><br><span class="line">&gt;&gt;&gt;print(s1)</span><br><span class="line"><span class="keyword">my</span> <span class="built_in">name</span> <span class="keyword">is</span> jack <span class="keyword">my</span> age <span class="keyword">is</span> <span class="number">18</span></span><br><span class="line">&gt;&gt;&gt;print(s2)</span><br><span class="line"><span class="keyword">my</span> <span class="built_in">name</span> <span class="keyword">is</span> jack <span class="keyword">my</span> age <span class="keyword">is</span> <span class="number">18</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="按指定位置传值"><a href="#按指定位置传值" class="headerlink" title="按指定位置传值"></a>按指定位置传值</h3><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt;s1='<span class="keyword">my</span> <span class="built_in">name</span> <span class="keyword">is</span> &#123;<span class="number">0</span>&#125; <span class="keyword">my</span> age <span class="keyword">is</span> &#123;<span class="number">1</span>&#125;'.format('jack',<span class="number">18</span>)</span><br><span class="line">&gt;&gt;&gt;s2='<span class="keyword">my</span> <span class="built_in">name</span> <span class="keyword">is</span> &#123;<span class="number">1</span>&#125; <span class="keyword">my</span> age <span class="keyword">is</span> &#123;<span class="number">0</span>&#125;'.format(<span class="number">18</span>,'jack')</span><br><span class="line">&gt;&gt;&gt;s3='<span class="keyword">my</span> <span class="built_in">name</span> <span class="keyword">is</span> &#123;<span class="built_in">name</span>&#125; <span class="keyword">my</span> age <span class="keyword">is</span> &#123;age&#125;'.format(age=<span class="number">18</span>,<span class="built_in">name</span>='jack')</span><br><span class="line">&gt;&gt;&gt;print(s1)</span><br><span class="line"><span class="keyword">my</span> <span class="built_in">name</span> <span class="keyword">is</span> jack <span class="keyword">my</span> age <span class="keyword">is</span> <span class="number">18</span></span><br><span class="line">&gt;&gt;&gt;print(s1)</span><br><span class="line"><span class="keyword">my</span> <span class="built_in">name</span> <span class="keyword">is</span> jack <span class="keyword">my</span> age <span class="keyword">is</span> <span class="number">18</span></span><br><span class="line">&gt;&gt;&gt;print(s3)</span><br><span class="line"><span class="keyword">my</span> <span class="built_in">name</span> <span class="keyword">is</span> jack <span class="keyword">my</span> age <span class="keyword">is</span> <span class="number">18</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="数字格式化"><a href="#数字格式化" class="headerlink" title="数字格式化"></a>数字格式化</h3><p>下表展示了 str.format() 格式化数字的多种方法</p>
+<figure class="highlight gauss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; <span class="keyword">print</span>(<span class="string">"&#123;:.2f&#125;"</span>.<span class="keyword">format</span>(<span class="number">3.1415926</span>));</span><br><span class="line"><span class="number">3.14</span></span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>数字</th>
+<th align="center">格式</th>
+<th align="center">输出</th>
+<th align="right">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>3.1415926</td>
+<td align="center">{:.2f}</td>
+<td align="center">3.14</td>
+<td align="right">保留小数点后两位</td>
+</tr>
+<tr>
+<td>3.1415926</td>
+<td align="center">{:+.2f}</td>
+<td align="center">+3.14</td>
+<td align="right">带符号保留小数点后两位</td>
+</tr>
+<tr>
+<td>-1</td>
+<td align="center">{:+.2f}</td>
+<td align="center">-1.00</td>
+<td align="right">带符号保留小数点后两位</td>
+</tr>
+<tr>
+<td>2.71828</td>
+<td align="center">{:.0f}</td>
+<td align="center">3</td>
+<td align="right">不带小数</td>
+</tr>
+<tr>
+<td>5</td>
+<td align="center">{:0&gt;2d}</td>
+<td align="center">05</td>
+<td align="right">数字补零(填充左边, 宽度为2)</td>
+</tr>
+<tr>
+<td>5</td>
+<td align="center">{:x&lt;4d}</td>
+<td align="center">5xxx</td>
+<td align="right">数字补x(填充右边, 宽度为4)</td>
+</tr>
+<tr>
+<td>10</td>
+<td align="center">{:x&lt;4d}</td>
+<td align="center">10xx</td>
+<td align="right">数字补x(填充右边, 宽度为4)</td>
+</tr>
+<tr>
+<td>1000000</td>
+<td align="center">{:,}</td>
+<td align="center">1,000,000</td>
+<td align="right">以逗号分隔的数字格式</td>
+</tr>
+<tr>
+<td>0.25</td>
+<td align="center">{:.2%}</td>
+<td align="center">25.00%</td>
+<td align="right">百分比格式</td>
+</tr>
+<tr>
+<td>1000000000</td>
+<td align="center">{:.2e}</td>
+<td align="center">1.00e+09</td>
+<td align="right">指数记法</td>
+</tr>
+<tr>
+<td>13</td>
+<td align="center">{:10d}</td>
+<td align="center">13</td>
+<td align="right">右对齐 (默认, 宽度为10)</td>
+</tr>
+<tr>
+<td>13</td>
+<td align="center">{:&lt;10d}</td>
+<td align="center">13</td>
+<td align="right">左对齐 (宽度为10)</td>
+</tr>
+<tr>
+<td>13</td>
+<td align="center">{:^10d}</td>
+<td align="center">13</td>
+<td align="right">中间对齐 (宽度为10)</td>
+</tr>
+</tbody></table>
+<h2 id="9、大小写字符转换"><a href="#9、大小写字符转换" class="headerlink" title="9、大小写字符转换"></a><em>9、大小写字符转换</em></h2><ol>
+<li>lower将字母转换成小写  语法：str.lower()</li>
+<li>upper将字母转换成大写   语法：str.upper()<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;</span>&gt;print(<span class="string">'JACK'</span>.lower())</span><br><span class="line">jack</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;print(<span class="string">'jack'</span>.upper())</span><br><span class="line">JACK</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h2 id="10、字符串的替换replace"><a href="#10、字符串的替换replace" class="headerlink" title="10、字符串的替换replace"></a><em>10、字符串的替换replace</em></h2><ul>
+<li>replace() 方法把字符串中的 old（旧字符串） 替换成 new(新字符串)，如果指定第三个参数max，则替换不超过 max 次。<br>语法：str.replace(old, new[, max])<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;</span>&gt;res=<span class="string">'hello jack jack'</span></span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;print(res.replace(<span class="string">'jack'</span>,<span class="string">'jie'</span>))</span><br><span class="line">hello jie jie</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;print(res.replace(<span class="string">'jack'</span>,<span class="string">'jie'</span>,<span class="number">1</span>))</span><br><span class="line">hello jie jack</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h2 id="总结字符串类型"><a href="#总结字符串类型" class="headerlink" title="总结字符串类型"></a><em>总结字符串类型</em></h2><ol>
+<li><p>存一个值<br> 只能存一个值</p>
+</li>
+<li><p>有序or无序<br> 有序</p>
+</li>
+<li><p>可变or不可变<br> ！！！不可变：值变，id就变。不可变==可hash</p>
+</li>
+</ol>
+<h1 id="列表-list"><a href="#列表-list" class="headerlink" title="列表(list)"></a><strong>列表(list)</strong></h1><ul>
+<li>作用：多个爱好,多门课程,存放多个值<br>定义：[]内可以有多个任意类型的值，逗号分隔<br>list1=[‘h’,’e’,’l’,’l’,’o’]  #等同于list1=list(‘hello’)</li>
+</ul>
+<p><strong>基本使用常规操作</strong></p>
+<h2 id="1、按索引存取值-正向存取-反向存取-：即可改也可以取"><a href="#1、按索引存取值-正向存取-反向存取-：即可改也可以取" class="headerlink" title="1、按索引存取值(正向存取+反向存取)：即可改也可以取"></a><em>1、按索引存取值(正向存取+反向存取)：即可改也可以取</em></h2><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;</span>&gt;list1=[<span class="string">'h'</span>,<span class="string">'e'</span>,<span class="string">'l'</span>,<span class="string">'l'</span>,<span class="string">'o'</span>]</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;print(list1[<span class="number">1</span>])</span><br><span class="line">e</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;print(list1[-<span class="number">1</span>])</span><br><span class="line">o</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;list1[<span class="number">1</span>]=<span class="string">'w'</span></span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;print(list1)</span><br><span class="line">[<span class="string">'h'</span>, <span class="string">'w'</span>, <span class="string">'l'</span>, <span class="string">'l'</span>, <span class="string">'o'</span>]</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;print(list1[<span class="number">1</span>])</span><br><span class="line">w</span><br></pre></td></tr></table></figure>
+
+<h2 id="2、切片-顾头不顾尾，步长-1"><a href="#2、切片-顾头不顾尾，步长-1" class="headerlink" title="2、切片(顾头不顾尾，步长)"></a><em>2、切片(顾头不顾尾，步长)</em></h2><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;</span>&gt;l=[<span class="string">'name'</span>,<span class="string">'jack'</span>,<span class="string">'age'</span>,<span class="string">'18'</span>,<span class="string">'python'</span>]</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;print(l[<span class="number">0</span><span class="symbol">:</span><span class="number">2</span>])</span><br><span class="line">[<span class="string">'name'</span>, <span class="string">'jack'</span>]</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;print(l[<span class="number">0</span><span class="symbol">:</span><span class="number">4</span><span class="symbol">:</span><span class="number">2</span>])</span><br><span class="line">[<span class="string">'name'</span>, <span class="string">'jack'</span>]</span><br></pre></td></tr></table></figure>
+
+<h2 id="3、长度len-1"><a href="#3、长度len-1" class="headerlink" title="3、长度len"></a><em>3、长度len</em></h2><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;</span>&gt;l=[<span class="string">'name'</span>,<span class="string">'jack'</span>,<span class="string">'age'</span>,<span class="string">'18'</span>,<span class="string">'python'</span>]</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;print(len(l))</span><br><span class="line"><span class="number">5</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="4、成员运算in和not-in"><a href="#4、成员运算in和not-in" class="headerlink" title="4、成员运算in和not in"></a><em>4、成员运算in和not in</em></h2><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;</span>&gt;l=[<span class="string">'name'</span>,<span class="string">'jack'</span>,<span class="string">'age'</span>,<span class="string">'18'</span>,<span class="string">'python'</span>]</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;print(<span class="string">'python'</span> in l)</span><br><span class="line">True</span><br></pre></td></tr></table></figure>
+
+<h2 id="5、列表值的增加"><a href="#5、列表值的增加" class="headerlink" title="5、列表值的增加"></a><em>5、列表值的增加</em></h2><h3 id="列表末尾追加appen"><a href="#列表末尾追加appen" class="headerlink" title="列表末尾追加appen"></a>列表末尾追加appen</h3><ul>
+<li>append() 方法用于在列表末尾添加新的对象。<br>语法：list.append(obj)       obj – 添加到列表末尾的对象。<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;</span>&gt;l=[<span class="string">'name'</span>,<span class="string">'jack'</span>,<span class="string">'age'</span>,<span class="string">'18'</span>]</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;l.append(<span class="string">'python'</span>)</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;print(l)</span><br><span class="line">[<span class="string">'name'</span>, <span class="string">'jack'</span>, <span class="string">'age'</span>, <span class="string">'18'</span>, <span class="string">'python'</span>]</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h3 id="列表指定位置插入insert"><a href="#列表指定位置插入insert" class="headerlink" title="列表指定位置插入insert"></a>列表指定位置插入insert</h3><ul>
+<li>insert() 函数用于将指定对象插入列表的指定位置。<br>语法：list.insert(index, obj)<br>index – 对象 obj 需要插入的索引位置。<br>obj – 要插入列表中的对象。<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;</span>&gt;l=[<span class="string">'name'</span>,<span class="string">'jack'</span>,<span class="string">'age'</span>,<span class="string">'18'</span>]</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;l.insert(<span class="number">2</span>,<span class="string">'python'</span>)</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;print(l)</span><br><span class="line">[<span class="string">'name'</span>, <span class="string">'jack'</span>, <span class="string">'python'</span>, <span class="string">'age'</span>, <span class="string">'18'</span>]</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h2 id="6、列表值的删除"><a href="#6、列表值的删除" class="headerlink" title="6、列表值的删除"></a><em>6、列表值的删除</em></h2><h3 id="有返回值的删除pop"><a href="#有返回值的删除pop" class="headerlink" title="有返回值的删除pop()"></a>有返回值的删除pop()</h3><ul>
+<li>pop() 函数用于移除列表中的一个元素（默认最后一个元素），并且返回该元素的值。<br>语法：list.pop([index])<br>index– 可选参数，要移除列表元素的索引值，不能超过列表总长度，默认为 index=-1，删除最后一个列表值<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;</span>&gt;l=[<span class="string">'name'</span>,<span class="string">'jack'</span>,<span class="string">'age'</span>,<span class="string">'18'</span>,<span class="string">'python'</span>]</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;l.pop()    <span class="comment"># 默认删除末尾</span></span><br><span class="line"><span class="string">'python'</span></span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;print(l)</span><br><span class="line">[<span class="string">'name'</span>, <span class="string">'jack'</span>, <span class="string">'age'</span>, <span class="string">'18'</span>]</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h3 id="没有返回值的删除remove"><a href="#没有返回值的删除remove" class="headerlink" title="没有返回值的删除remove()"></a>没有返回值的删除remove()</h3><ul>
+<li>remove() 函数用于移除列表中某个值的第一个匹配项。<br>语法：list.remove(obj)   obj – 列表中要移除的对象，指定要删除的对象。<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;</span>&gt;l=[<span class="string">'name'</span>,<span class="string">'jack'</span>,<span class="string">'age'</span>,<span class="string">'18'</span>,<span class="string">'python'</span>]</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;l.remove(<span class="string">'python'</span>)</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;print(l)</span><br><span class="line">[<span class="string">'name'</span>, <span class="string">'jack'</span>, <span class="string">'age'</span>, <span class="string">'18'</span>]</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h2 id="7、反向输出元素"><a href="#7、反向输出元素" class="headerlink" title="7、反向输出元素"></a><em>7、反向输出元素</em></h2><ul>
+<li>reverse() 函数用于反向列表中元素。<br>语法：list.reverse()<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;</span>&gt;l=[<span class="string">'name'</span>,<span class="string">'jack'</span>,<span class="string">'age'</span>,<span class="string">'18'</span>,<span class="string">'python'</span>]</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;print(l.reverse())</span><br><span class="line">[<span class="string">'python'</span>, <span class="string">'18'</span>, <span class="string">'age'</span>, <span class="string">'jack'</span>, <span class="string">'name'</span>]</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h2 id="8、列表排序"><a href="#8、列表排序" class="headerlink" title="8、列表排序"></a><em>8、列表排序</em></h2><ul>
+<li>sort() 函数用于对原列表进行排序，如果指定参数，则使用比较函数指定的比较函数。<br>语法：list.sort(cmp=None, key=None, reverse=False)<br>cmp – 可选参数, 如果指定了该参数会使用该参数的方法进行排序。<br>key – 主要是用来进行比较的元素，只有一个参数，具体的函数的参数就是取自于可迭代对象中，指定可迭代对象中的一个元素来进行排序。<br>reverse – 排序规则，reverse = True 降序， reverse = False 升序（默认）<figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; l=[<span class="number">1</span>,<span class="number">5</span>,<span class="number">2</span>,<span class="number">9</span>,<span class="number">6</span>,<span class="number">8</span>]</span><br><span class="line">&gt;&gt;&gt; l.sort()</span><br><span class="line">&gt;&gt;&gt; print(l)</span><br><span class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">8</span>, <span class="number">9</span>]</span><br><span class="line">&gt;&gt;&gt;l.sort(reverse=True)</span><br><span class="line">&gt;&gt;&gt;print(l)</span><br><span class="line">[<span class="number">9</span>, <span class="number">8</span>, <span class="number">6</span>, <span class="number">5</span>, <span class="number">2</span>, <span class="number">1</span>]</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h2 id="9、统计元素出现次数"><a href="#9、统计元素出现次数" class="headerlink" title="9、统计元素出现次数"></a><em>9、统计元素出现次数</em></h2><ul>
+<li>count() 方法用于统计某个元素在列表中出现的次数。<br>语法：list.count(obj)      obj – 列表中统计的对象。<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;</span>&gt;l=[<span class="string">'hello'</span>,<span class="string">'jack'</span>,<span class="number">18</span>,<span class="string">'jack'</span>]</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;l.count(<span class="string">'jack'</span>)</span><br><span class="line"><span class="number">2</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h2 id="10、查看元素出现的位置-索引"><a href="#10、查看元素出现的位置-索引" class="headerlink" title="10、查看元素出现的位置(索引)"></a><em>10、查看元素出现的位置(索引)</em></h2><ul>
+<li>index() 函数用于从列表中找出某个值第一个匹配项的索引位置。<br>语法：list.index(obj)      obj–查找的元素<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;</span>&gt;l=[<span class="string">'hello'</span>,<span class="string">'jack'</span>,<span class="number">18</span>,<span class="string">'jack'</span>]</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;l.index(<span class="string">'jack'</span>)</span><br><span class="line"><span class="number">1</span></span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;l.index(<span class="number">18</span>,<span class="number">1</span>,<span class="number">3</span>)</span><br><span class="line"><span class="number">2</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h2 id="11、循环"><a href="#11、循环" class="headerlink" title="11、循环"></a><em>11、循环</em></h2><h3 id="依赖索引"><a href="#依赖索引" class="headerlink" title="依赖索引"></a>依赖索引</h3><figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">l=[<span class="string">'name'</span>,<span class="string">'jack'</span>,<span class="string">'age'</span>,<span class="string">'18'</span>,<span class="string">'python'</span>]</span><br><span class="line"><span class="built_in">i</span>=<span class="number">0</span></span><br><span class="line"><span class="keyword">while</span> <span class="built_in">i</span> &lt; len(l):</span><br><span class="line">    print(l[<span class="built_in">i</span>])</span><br><span class="line">    <span class="built_in">i</span>+=<span class="number">1</span></span><br><span class="line">依次取出列表的元素</span><br><span class="line"><span class="keyword">for</span> <span class="built_in">i</span> in range(len(l)):</span><br><span class="line">    print(<span class="built_in">i</span>,l[<span class="built_in">i</span>])</span><br></pre></td></tr></table></figure>
+
+<h3 id="不依赖索引"><a href="#不依赖索引" class="headerlink" title="不依赖索引"></a>不依赖索引</h3><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> <span class="built_in">item</span>  <span class="keyword">in</span> l:</span><br><span class="line">    print(<span class="built_in">item</span>)</span><br></pre></td></tr></table></figure>
+
+<h3 id="补充for循环"><a href="#补充for循环" class="headerlink" title="补充for循环"></a>补充for循环</h3><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(0,5,2):     #0  2  4</span><br><span class="line">    <span class="builtin-name">print</span>(i)</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(10):    #默认从零起始</span><br><span class="line">    <span class="builtin-name">print</span>(i)</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(10,-2,-1):  # 10 9 8 <span class="built_in">..</span>.</span><br><span class="line">    <span class="builtin-name">print</span>(i)</span><br></pre></td></tr></table></figure>
+
+<h2 id="总结列表类型"><a href="#总结列表类型" class="headerlink" title="总结列表类型"></a><em>总结列表类型</em></h2><ol>
+<li>存多个值</li>
+<li>有序</li>
+<li>可变</li>
+</ol>
+<h1 id="元组-tuple"><a href="#元组-tuple" class="headerlink" title="元组(tuple)"></a><strong>元组(tuple)</strong></h1><ul>
+<li>作用：存多个值，对比列表来说，元组不可变（是可以当做字典的key的），主要是用来读<br>定义：t=(1,2,3,4) 实质是t=tuple((1,2,3,4))</li>
+</ul>
+<h2 id="1、按索引取值-正向取-反向取-：只能取-1"><a href="#1、按索引取值-正向取-反向取-：只能取-1" class="headerlink" title="1、按索引取值(正向取+反向取)：只能取"></a><em>1、按索引取值(正向取+反向取)：只能取</em></h2><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;</span>&gt;t=(<span class="string">'abc'</span>)</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;t[<span class="number">0</span>]</span><br><span class="line"><span class="number">1</span></span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;t[-<span class="number">1</span>]</span><br><span class="line"><span class="number">4</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="2、切片-顾头不顾尾，步长-2"><a href="#2、切片-顾头不顾尾，步长-2" class="headerlink" title="2、切片(顾头不顾尾，步长)"></a><em>2、切片(顾头不顾尾，步长)</em></h2><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;</span>&gt;t=(<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>)</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;t[<span class="number">0</span><span class="symbol">:</span><span class="number">3</span>]</span><br><span class="line">(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>)</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;t[<span class="number">0</span><span class="symbol">:</span><span class="number">5</span><span class="symbol">:</span><span class="number">2</span>]    <span class="comment"># 每两个取一个</span></span><br><span class="line">(<span class="number">1</span>, <span class="number">3</span>, <span class="number">5</span>)</span><br></pre></td></tr></table></figure>
+
+<h2 id="3、长度len-2"><a href="#3、长度len-2" class="headerlink" title="3、长度len"></a><em>3、长度len</em></h2><figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt;t=(<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>)</span><br><span class="line">&gt;&gt;&gt;len(t)</span><br><span class="line"><span class="number">4</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="4、成员运算in和not-in-1"><a href="#4、成员运算in和not-in-1" class="headerlink" title="4、成员运算in和not in"></a><em>4、成员运算in和not in</em></h2><figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt;t=(<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>)</span><br><span class="line">&gt;&gt;&gt;print(<span class="number">1</span> in t)</span><br><span class="line">True</span><br></pre></td></tr></table></figure>
+
+<h2 id="5、统计元素出现次数"><a href="#5、统计元素出现次数" class="headerlink" title="5、统计元素出现次数"></a><em>5、统计元素出现次数</em></h2><ul>
+<li>count() 方法用于统计某个元素在列表中出现的次数。<br>语法：tuple.count(obj)      obj – 列表中统计的对象。<figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt;t=(<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">5</span>,<span class="number">1</span>,<span class="number">12</span>,<span class="number">1</span>,<span class="number">2</span>)</span><br><span class="line">&gt;&gt;&gt; t.count(<span class="number">1</span>)</span><br><span class="line"><span class="number">3</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h2 id="6、查看元素出现的位置-索引"><a href="#6、查看元素出现的位置-索引" class="headerlink" title="6、查看元素出现的位置(索引)"></a><em>6、查看元素出现的位置(索引)</em></h2><ul>
+<li>index() 函数用于从列表中找出某个值第一个匹配项的索引位置。<br>语法：tuple.index(obj)      obj–查找的元素<figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt;t=(<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">5</span>,<span class="number">1</span>,<span class="number">12</span>,<span class="number">1</span>,<span class="number">2</span>)</span><br><span class="line">&gt;&gt;&gt;t.index(<span class="number">3</span>)</span><br><span class="line"><span class="number">2</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h2 id="该类型总结"><a href="#该类型总结" class="headerlink" title="该类型总结"></a><em>该类型总结</em></h2><ol>
+<li>存多个值</li>
+<li>有序</li>
+<li>不可变</li>
+</ol>
+<h1 id="字典-dict"><a href="#字典-dict" class="headerlink" title="字典(dict)"></a><strong>字典(dict)</strong></h1><ul>
+<li>作用：存多个值,key-value存取，取值速度快<br>定义：{}内以逗号分隔多个元素，格式为key:value，<br>key必须是不可变类型，value可以是任意类型</li>
+</ul>
+<ol>
+<li>dic={‘name’:’jack’,’age’:18,’sex’:’male’} #本质dic=dict({….})<br>或</li>
+<li>dic=dict(name=’egon’,age=18,sex=’male’)<br>或</li>
+<li>dic=dict([[‘name’,’egon’],(‘age’,18)])</li>
+</ol>
+<h2 id="1、按key存取值：可存可取可改"><a href="#1、按key存取值：可存可取可改" class="headerlink" title="1、按key存取值：可存可取可改"></a><em>1、按key存取值：可存可取可改</em></h2><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;</span>&gt;dic=&#123;<span class="string">'name'</span><span class="symbol">:<span class="string">'jack'</span></span>&#125;</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;dic[<span class="string">'age'</span>]=<span class="number">18</span></span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;print(dic)</span><br><span class="line">&#123;<span class="string">'name'</span>: <span class="string">'jack'</span>, <span class="string">'age'</span>: <span class="number">18</span>&#125;</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;print(dic[<span class="string">'name'</span>])</span><br><span class="line">jack</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;dic[<span class="string">'name'</span>]=<span class="string">'JACK'</span></span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;print(dic)</span><br><span class="line">&#123;<span class="string">'name'</span>: <span class="string">'JACK'</span>, <span class="string">'age'</span>: <span class="number">18</span>&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="2、长度len"><a href="#2、长度len" class="headerlink" title="2、长度len"></a><em>2、长度len</em></h2><ul>
+<li>字典长度为计算键值key的长度<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;</span>&gt;dic=&#123;<span class="string">'name'</span><span class="symbol">:<span class="string">'jack'</span></span>,<span class="string">'age'</span><span class="symbol">:</span><span class="number">18</span>,<span class="string">'sex'</span><span class="symbol">:<span class="string">'male'</span></span>&#125;</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;len(dic)</span><br><span class="line"><span class="number">3</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h2 id="3、成员运算in和not-in"><a href="#3、成员运算in和not-in" class="headerlink" title="3、成员运算in和not in"></a><em>3、成员运算in和not in</em></h2><ul>
+<li>判断的字典的key<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt;dic=&#123;<span class="string">'name'</span>:<span class="string">'jack'</span>,<span class="string">'age'</span>:18,<span class="string">'sex'</span>:<span class="string">'male'</span>&#125;</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt;<span class="built_in">print</span>(<span class="string">'name'</span> <span class="keyword">in</span> dic)</span></span><br><span class="line">True</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt;<span class="built_in">print</span>(<span class="string">'jack'</span> <span class="keyword">in</span> dic)</span></span><br><span class="line">False</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h2 id="4、删除值"><a href="#4、删除值" class="headerlink" title="4、删除值"></a><em>4、删除值</em></h2><h3 id="有返回值的删除pop-1"><a href="#有返回值的删除pop-1" class="headerlink" title="有返回值的删除pop"></a>有返回值的删除pop</h3><ul>
+<li>存在key时则返回key对应的value,若不存在则返回自定义的<br>定义dic.pop(key,None)    key–为字典的k，None–当对象不存在时返回的值</li>
+</ul>
+<h4 id="1-当key存在时"><a href="#1-当key存在时" class="headerlink" title="1. 当key存在时"></a>1. 当key存在时</h4><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;</span>&gt;dic=&#123;<span class="string">'name'</span><span class="symbol">:<span class="string">'jack'</span></span>,<span class="string">'age'</span><span class="symbol">:</span><span class="number">18</span>,<span class="string">'sex'</span><span class="symbol">:<span class="string">'male'</span></span>&#125;</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;res=dic.pop(<span class="string">'name'</span>)</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;print(res)</span><br><span class="line">jack</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;print(dic)</span><br><span class="line">&#123;<span class="string">'age'</span>: <span class="number">18</span>, <span class="string">'sex'</span>: <span class="string">'male'</span>&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-当key不存在时"><a href="#2-当key不存在时" class="headerlink" title="2. 当key不存在时"></a>2. 当key不存在时</h4><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;</span>&gt;dic=&#123;<span class="string">'name'</span><span class="symbol">:<span class="string">'jack'</span></span>,<span class="string">'age'</span><span class="symbol">:</span><span class="number">18</span>,<span class="string">'sex'</span><span class="symbol">:<span class="string">'male'</span></span>&#125;</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;res=dic.pop(<span class="string">'xxx'</span>,<span class="string">'key不存在'</span>)</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;print(res)</span><br><span class="line"><span class="string">'key不存在'</span></span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;print(dic)</span><br><span class="line">&#123;<span class="string">'name'</span>: <span class="string">'jack'</span>, <span class="string">'age'</span>: <span class="number">18</span>, <span class="string">'sex'</span>: <span class="string">'male'</span>&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="没有返回值的删除"><a href="#没有返回值的删除" class="headerlink" title="没有返回值的删除"></a>没有返回值的删除</h3><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;</span>&gt;dic=&#123;<span class="string">'name'</span><span class="symbol">:<span class="string">'jack'</span></span>,<span class="string">'age'</span><span class="symbol">:</span><span class="number">18</span>,<span class="string">'sex'</span><span class="symbol">:<span class="string">'male'</span></span>&#125;</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;del dic[<span class="string">'age'</span>]</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;print(dic)</span><br><span class="line">&#123;<span class="string">'name'</span>: <span class="string">'jack'</span>, <span class="string">'sex'</span>: <span class="string">'male'</span>&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="删除整个字典del"><a href="#删除整个字典del" class="headerlink" title="删除整个字典del"></a>删除整个字典del</h3><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;</span>&gt;dic=&#123;<span class="string">'name'</span><span class="symbol">:<span class="string">'jack'</span></span>,<span class="string">'age'</span><span class="symbol">:</span><span class="number">18</span>,<span class="string">'sex'</span><span class="symbol">:<span class="string">'male'</span></span>&#125;</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;del dic</span><br></pre></td></tr></table></figure>
+
+<h2 id="5、键keys-，值values-，键值对items"><a href="#5、键keys-，值values-，键值对items" class="headerlink" title="5、键keys()，值values()，键值对items()"></a><em>5、键keys()，值values()，键值对items()</em></h2><ul>
+<li><p>依次取出健跟值</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;</span>&gt;dic=&#123;<span class="string">'name'</span><span class="symbol">:<span class="string">'jack'</span></span>,<span class="string">'age'</span><span class="symbol">:</span><span class="number">18</span>&#125;</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;print(dic.keys())   <span class="comment">#看字典中有那些健key</span></span><br><span class="line">dict_keys([<span class="string">'name'</span>, <span class="string">'age'</span>])</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;print(dic.values())  <span class="comment">#查看字典中有哪些值value</span></span><br><span class="line">dict_values([<span class="string">'jack'</span>, <span class="number">18</span>])</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;print(dic.items())  <span class="comment">#查看键值对应以关系</span></span><br><span class="line">dict_items([(<span class="string">'name'</span>, <span class="string">'jack'</span>), (<span class="string">'age'</span>, <span class="number">18</span>)])</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>用循环遍历取值</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">dic=&#123;<span class="string">'name'</span>:<span class="string">'jack'</span>,<span class="string">'age'</span>:18&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> key <span class="keyword">in</span> dic.keys(): <span class="comment">#只取出健key</span></span><br><span class="line">    <span class="built_in">print</span>(key)</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> value <span class="keyword">in</span> dic.values():  <span class="comment">#只取出字典的值value</span></span><br><span class="line">    <span class="built_in">print</span>(value)</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> k,v <span class="keyword">in</span> dic.items():  <span class="comment">#k,v=('name', 'jack')</span></span><br><span class="line">    <span class="built_in">print</span>(k,v)</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h2 id="6、字典更新修改"><a href="#6、字典更新修改" class="headerlink" title="6、字典更新修改"></a><em>6、字典更新修改</em></h2><ul>
+<li>对与老字典来说，更新指的是，新字典中有而老字典中没有则添加，新有而老有，则覆盖<br>定义;dict.update({key:value})<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;</span>&gt;dic=&#123;<span class="string">'name'</span><span class="symbol">:<span class="string">'jack'</span></span>,<span class="string">'age'</span><span class="symbol">:</span><span class="number">18</span>&#125;</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;dic.update(&#123;<span class="string">'age'</span><span class="symbol">:</span><span class="number">20</span>,<span class="string">'sex'</span><span class="symbol">:<span class="string">'male'</span></span>&#125;)</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;print(dic)</span><br><span class="line">&#123;<span class="string">'name'</span>: <span class="string">'jack'</span>, <span class="string">'age'</span>: <span class="number">20</span>, <span class="string">'sex'</span>: <span class="string">'male'</span>&#125;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h2 id="7、setdefaul的用处"><a href="#7、setdefaul的用处" class="headerlink" title="7、setdefaul的用处"></a><em>7、setdefaul的用处</em></h2><h3 id="1、字典有中有key，则不修改，返回原key对应的原值"><a href="#1、字典有中有key，则不修改，返回原key对应的原值" class="headerlink" title="1、字典有中有key，则不修改，返回原key对应的原值"></a>1、字典有中有key，则不修改，返回原key对应的原值</h3><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;</span>&gt;dic=&#123;<span class="string">'name'</span><span class="symbol">:<span class="string">'jack'</span></span>,<span class="string">'age'</span><span class="symbol">:</span><span class="number">18</span>&#125;</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;res=dic.setdefault(<span class="string">'name'</span>,<span class="string">'JACK'</span>)</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;print(<span class="string">'返回值:'</span>,res)</span><br><span class="line">返回值: jack</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;print(dic)</span><br><span class="line">&#123;<span class="string">'name'</span>: <span class="string">'jack'</span>, <span class="string">'age'</span>: <span class="number">18</span>&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="2、没有对应的key，则添加，返回添加的key对应的value"><a href="#2、没有对应的key，则添加，返回添加的key对应的value" class="headerlink" title="2、没有对应的key，则添加，返回添加的key对应的value"></a>2、没有对应的key，则添加，返回添加的key对应的value</h3><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;</span>&gt;dic=&#123;<span class="string">'name'</span><span class="symbol">:<span class="string">'jack'</span></span>&#125;</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;res=dic.setdefault(<span class="string">'age'</span>,<span class="number">18</span>)</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;print(<span class="string">'返回值:'</span>,res)</span><br><span class="line">返回值: <span class="number">18</span></span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;print(dic)</span><br><span class="line">&#123;<span class="string">'name'</span>: <span class="string">'jack'</span>, <span class="string">'age'</span>: <span class="number">18</span>&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="字典类型总结"><a href="#字典类型总结" class="headerlink" title="字典类型总结"></a>字典类型总结</h2><ol>
+<li>存多个值</li>
+<li>无序</li>
+<li>可变</li>
+</ol>
+<h1 id="集合-set"><a href="#集合-set" class="headerlink" title="集合(set)"></a><strong>集合(set)</strong></h1><ul>
+<li>集合（set）是一个无序的不重复元素序列。<br>可以使用大括号 { } 或者 set() 函数创建集合，注意：创建一个空集合必须用 set() 而不是 { }，因为 { } 是用来创建一个空字典。</li>
+</ul>
+<ol>
+<li>作用：去重，集合内没有相同的元素</li>
+</ol>
+<h2 id="1、去重"><a href="#1、去重" class="headerlink" title="1、去重"></a><em>1、去重</em></h2><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;</span>&gt;s=&#123;<span class="string">'python'</span>,<span class="string">'orcl'</span>,<span class="string">'web'</span>,<span class="string">'python'</span>&#125;</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;print(s)</span><br><span class="line">&#123;<span class="string">'web'</span>, <span class="string">'python'</span>, <span class="string">'orcl'</span>&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="2、集合运算关系"><a href="#2、集合运算关系" class="headerlink" title="2、集合运算关系"></a><em>2、集合运算关系</em></h2><h3 id="1、交集（’-amp-’）"><a href="#1、交集（’-amp-’）" class="headerlink" title="1、交集（’&amp;’）"></a>1、交集（’&amp;’）</h3><ul>
+<li>即学习了python又学习了web的人(学习了相同课程的人)<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;</span>&gt;a=&#123;<span class="string">'python'</span>,<span class="string">'linux'</span>,<span class="string">'web'</span>,<span class="string">'mysql'</span>&#125;</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;b=&#123;<span class="string">'C语言'</span>,<span class="string">'python'</span>,<span class="string">'orcl'</span>,<span class="string">'web'</span>&#125;</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;print(a &amp; b)</span><br><span class="line">&#123;<span class="string">'python'</span>, <span class="string">'web'</span>&#125;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h3 id="2、并集（’-’）"><a href="#2、并集（’-’）" class="headerlink" title="2、并集（’|’）"></a>2、并集（’|’）</h3><ul>
+<li>所有学习的课程<figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt;a=&#123;'python','linux','web','mysql'&#125;</span><br><span class="line">&gt;&gt;&gt;b=&#123;'C语言','python','orcl','web'&#125;</span><br><span class="line">&gt;&gt;&gt;print(a <span class="string">| b)</span></span><br><span class="line">&#123;'orcl', 'mysql', 'web', 'C语言', 'linux', 'python'&#125;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h3 id="3、差集（’-‘）"><a href="#3、差集（’-‘）" class="headerlink" title="3、差集（’-‘）"></a>3、差集（’-‘）</h3><ul>
+<li>只有a中才有的课程<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;</span>&gt;a=&#123;<span class="string">'python'</span>,<span class="string">'linux'</span>,<span class="string">'web'</span>,<span class="string">'mysql'</span>&#125;</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;b=&#123;<span class="string">'C语言'</span>,<span class="string">'python'</span>,<span class="string">'orcl'</span>,<span class="string">'web'</span>&#125;</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;print(a - b)</span><br><span class="line">&#123;<span class="string">'linux'</span>, <span class="string">'mysql'</span>&#125;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h3 id="4、交叉补集（’-’）"><a href="#4、交叉补集（’-’）" class="headerlink" title="4、交叉补集（’^’）"></a>4、交叉补集（’^’）</h3><ul>
+<li>没有被同时学习的课程<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;</span>&gt;a=&#123;<span class="string">'python'</span>,<span class="string">'linux'</span>,<span class="string">'web'</span>,<span class="string">'mysql'</span>&#125;</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;b=&#123;<span class="string">'C语言'</span>,<span class="string">'python'</span>,<span class="string">'orcl'</span>,<span class="string">'web'</span>&#125;</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;print(a ^ b)</span><br><span class="line">&#123;<span class="string">'orcl'</span>, <span class="string">'mysql'</span>, <span class="string">'C语言'</span>, <span class="string">'linux'</span>&#125;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h2 id="3、长度len-3"><a href="#3、长度len-3" class="headerlink" title="3、长度len"></a><em>3、长度len</em></h2><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;</span>&gt;a=&#123;<span class="string">'python'</span>,<span class="string">'linux'</span>,<span class="string">'web'</span>,<span class="string">'mysql'</span>&#125;</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;len(a)</span><br><span class="line"><span class="number">4</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="4、成员运算in-和not-in"><a href="#4、成员运算in-和not-in" class="headerlink" title="4、成员运算in 和not in"></a><em>4、成员运算in 和not in</em></h2><figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt;s=&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>&#125;</span><br><span class="line">&gt;&gt;&gt;print(<span class="number">1</span> in s)</span><br><span class="line">True</span><br></pre></td></tr></table></figure>
+
+<h2 id="5、增加值"><a href="#5、增加值" class="headerlink" title="5、增加值"></a><em>5、增加值</em></h2><h3 id="1-一次添加一个值（add（））"><a href="#1-一次添加一个值（add（））" class="headerlink" title="1.一次添加一个值（add（））"></a>1.一次添加一个值（add（））</h3><p>定义：set.add(ord)     ord–添加得对象</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;</span>&gt;s=&#123;<span class="string">'a'</span>,<span class="string">'b'</span>,<span class="string">'c'</span>&#125;</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;s.add(<span class="string">'d'</span>)</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;print(s)</span><br><span class="line">&#123;<span class="string">'c'</span>, <span class="string">'b'</span>, <span class="string">'d'</span>, <span class="string">'a'</span>&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-一次添加多个值（update-）"><a href="#2-一次添加多个值（update-）" class="headerlink" title="2.一次添加多个值（update()）"></a>2.一次添加多个值（update()）</h3><ul>
+<li>定义：set.update({})<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;</span>&gt;s=&#123;<span class="string">'a'</span>,<span class="string">'b'</span>,<span class="string">'c'</span>&#125;</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;s.update(&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;)</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;print(s)</span><br><span class="line">&#123;<span class="string">'c'</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="string">'b'</span>, <span class="string">'a'</span>&#125;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h2 id="6、删除值"><a href="#6、删除值" class="headerlink" title="6、删除值"></a><em>6、删除值</em></h2><h3 id="1-pop-随机删除一个"><a href="#1-pop-随机删除一个" class="headerlink" title="1.pop()随机删除一个"></a>1.pop()随机删除一个</h3><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;</span>&gt;s=&#123;<span class="string">'a'</span>,<span class="string">'b'</span>,<span class="string">'c'</span>&#125;</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;s.pop()  <span class="comment">#随机删除其中一个值a,b或者c</span></span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;print(s)</span><br><span class="line">&#123;<span class="string">'b'</span>, <span class="string">'a'</span>&#125;    或  &#123;<span class="string">'a'</span>,<span class="string">'c'</span>&#125;   或  &#123;<span class="string">'b'</span>,<span class="string">'c'</span>&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-discard-当删除的元素不存在的时候，不会报错"><a href="#2-discard-当删除的元素不存在的时候，不会报错" class="headerlink" title="2.discard() 当删除的元素不存在的时候，不会报错"></a>2.discard() 当删除的元素不存在的时候，不会报错</h3><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;</span>&gt;s=&#123;<span class="string">'a'</span>,<span class="string">'b'</span>,<span class="string">'c'</span>&#125;</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt; s.discard(<span class="string">'d'</span>)   <span class="comment">#不会报错程序正常执行</span></span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;print(s)</span><br><span class="line">&#123;<span class="string">'c'</span>, <span class="string">'b'</span>, <span class="string">'a'</span>&#125;</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;s.discard(<span class="string">'a'</span>)  <span class="comment">#删除元素a</span></span><br><span class="line">&#123;<span class="string">'c'</span>, <span class="string">'b'</span>&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-remove-当删除的元素不存在的时候，报错"><a href="#3-remove-当删除的元素不存在的时候，报错" class="headerlink" title="3.remove() 当删除的元素不存在的时候，报错"></a>3.remove() 当删除的元素不存在的时候，报错</h3><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;</span>&gt;s=&#123;<span class="string">'a'</span>,<span class="string">'b'</span>,<span class="string">'c'</span>&#125;</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;s.remove(<span class="string">'d'</span>)    <span class="comment">#程序报错找不到值抛出异常</span></span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;s.remove(<span class="string">'b'</span>)   <span class="comment"># 删除元素b</span></span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;print(s)</span><br><span class="line">&#123;<span class="string">'c'</span>, <span class="string">'a'</span>&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="总结集合类型"><a href="#总结集合类型" class="headerlink" title="总结集合类型"></a><em>总结集合类型</em></h2><ol>
+<li>无序</li>
+<li>不可变</li>
+<li>没有重复的值</li>
+</ol>
+
+      
+    </div>
+    
+    
+    
+	<div>
+		
+			<div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+
+
+		
+	</div>
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>您的支持将是我创作更新的动力！谢谢大家捧场！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wx.png" alt="杰克 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/zfb.png" alt="杰克 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/python基础知识/" <i class="fa fa-tag"> python基础知识</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/06/10/01-python入门介绍/" rel="next" title="python入门介绍">
+                <i class="fa fa-chevron-left"></i> python入门介绍
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/06/16/03-流程控制程序/" rel="prev" title="流程控制程序">
+                流程控制程序 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/主页.jpg" alt="杰克">
+            
+              <p class="site-author-name" itemprop="name">杰克</p>
+              <p class="site-description motion-element" itemprop="description">不能放纵自己过一个烂透的人生，不安于现状，不断探讨研究。</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">14</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="http://github.com/yongjiewen" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:wen_yongjie@126.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#数据类型"><span class="nav-number">1.</span> <span class="nav-text">数据类型</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是数据？"><span class="nav-number">1.1.</span> <span class="nav-text">什么是数据？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#为何数据要分不同的类型"><span class="nav-number">1.2.</span> <span class="nav-text">为何数据要分不同的类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据类型-1"><span class="nav-number">1.3.</span> <span class="nav-text">数据类型</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#布尔类型bool"><span class="nav-number">2.</span> <span class="nav-text">布尔类型bool</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#数字"><span class="nav-number">3.</span> <span class="nav-text">数字</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#整形int"><span class="nav-number">3.1.</span> <span class="nav-text">整形int</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#浮点型float"><span class="nav-number">3.2.</span> <span class="nav-text">浮点型float</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#字符串-str"><span class="nav-number">4.</span> <span class="nav-text">字符串(str)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1、按索引取值-正向取-反向取-：只能取"><span class="nav-number">4.1.</span> <span class="nav-text">1、按索引取值(正向取+反向取) ：只能取</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2、切片-顾头不顾尾，步长"><span class="nav-number">4.2.</span> <span class="nav-text">2、切片(顾头不顾尾，步长)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3、长度len"><span class="nav-number">4.3.</span> <span class="nav-text">3、长度len</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4、移除空白strip"><span class="nav-number">4.4.</span> <span class="nav-text">4、移除空白strip</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5、切分split"><span class="nav-number">4.5.</span> <span class="nav-text">5、切分split</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6、连接join"><span class="nav-number">4.6.</span> <span class="nav-text">6、连接join</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7、成员运算in和not-in"><span class="nav-number">4.7.</span> <span class="nav-text">7、成员运算in和not in</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8、-format-格式化输出"><span class="nav-number">4.8.</span> <span class="nav-text">8、 format 格式化输出</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#按默认位置传值"><span class="nav-number">4.8.1.</span> <span class="nav-text">按默认位置传值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#按指定位置传值"><span class="nav-number">4.8.2.</span> <span class="nav-text">按指定位置传值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数字格式化"><span class="nav-number">4.8.3.</span> <span class="nav-text">数字格式化</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9、大小写字符转换"><span class="nav-number">4.9.</span> <span class="nav-text">9、大小写字符转换</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#10、字符串的替换replace"><span class="nav-number">4.10.</span> <span class="nav-text">10、字符串的替换replace</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结字符串类型"><span class="nav-number">4.11.</span> <span class="nav-text">总结字符串类型</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#列表-list"><span class="nav-number">5.</span> <span class="nav-text">列表(list)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1、按索引存取值-正向存取-反向存取-：即可改也可以取"><span class="nav-number">5.1.</span> <span class="nav-text">1、按索引存取值(正向存取+反向存取)：即可改也可以取</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2、切片-顾头不顾尾，步长-1"><span class="nav-number">5.2.</span> <span class="nav-text">2、切片(顾头不顾尾，步长)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3、长度len-1"><span class="nav-number">5.3.</span> <span class="nav-text">3、长度len</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4、成员运算in和not-in"><span class="nav-number">5.4.</span> <span class="nav-text">4、成员运算in和not in</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5、列表值的增加"><span class="nav-number">5.5.</span> <span class="nav-text">5、列表值的增加</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#列表末尾追加appen"><span class="nav-number">5.5.1.</span> <span class="nav-text">列表末尾追加appen</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#列表指定位置插入insert"><span class="nav-number">5.5.2.</span> <span class="nav-text">列表指定位置插入insert</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6、列表值的删除"><span class="nav-number">5.6.</span> <span class="nav-text">6、列表值的删除</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#有返回值的删除pop"><span class="nav-number">5.6.1.</span> <span class="nav-text">有返回值的删除pop()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#没有返回值的删除remove"><span class="nav-number">5.6.2.</span> <span class="nav-text">没有返回值的删除remove()</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7、反向输出元素"><span class="nav-number">5.7.</span> <span class="nav-text">7、反向输出元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8、列表排序"><span class="nav-number">5.8.</span> <span class="nav-text">8、列表排序</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9、统计元素出现次数"><span class="nav-number">5.9.</span> <span class="nav-text">9、统计元素出现次数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#10、查看元素出现的位置-索引"><span class="nav-number">5.10.</span> <span class="nav-text">10、查看元素出现的位置(索引)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#11、循环"><span class="nav-number">5.11.</span> <span class="nav-text">11、循环</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#依赖索引"><span class="nav-number">5.11.1.</span> <span class="nav-text">依赖索引</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#不依赖索引"><span class="nav-number">5.11.2.</span> <span class="nav-text">不依赖索引</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#补充for循环"><span class="nav-number">5.11.3.</span> <span class="nav-text">补充for循环</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结列表类型"><span class="nav-number">5.12.</span> <span class="nav-text">总结列表类型</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#元组-tuple"><span class="nav-number">6.</span> <span class="nav-text">元组(tuple)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1、按索引取值-正向取-反向取-：只能取-1"><span class="nav-number">6.1.</span> <span class="nav-text">1、按索引取值(正向取+反向取)：只能取</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2、切片-顾头不顾尾，步长-2"><span class="nav-number">6.2.</span> <span class="nav-text">2、切片(顾头不顾尾，步长)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3、长度len-2"><span class="nav-number">6.3.</span> <span class="nav-text">3、长度len</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4、成员运算in和not-in-1"><span class="nav-number">6.4.</span> <span class="nav-text">4、成员运算in和not in</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5、统计元素出现次数"><span class="nav-number">6.5.</span> <span class="nav-text">5、统计元素出现次数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6、查看元素出现的位置-索引"><span class="nav-number">6.6.</span> <span class="nav-text">6、查看元素出现的位置(索引)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#该类型总结"><span class="nav-number">6.7.</span> <span class="nav-text">该类型总结</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#字典-dict"><span class="nav-number">7.</span> <span class="nav-text">字典(dict)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1、按key存取值：可存可取可改"><span class="nav-number">7.1.</span> <span class="nav-text">1、按key存取值：可存可取可改</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2、长度len"><span class="nav-number">7.2.</span> <span class="nav-text">2、长度len</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3、成员运算in和not-in"><span class="nav-number">7.3.</span> <span class="nav-text">3、成员运算in和not in</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4、删除值"><span class="nav-number">7.4.</span> <span class="nav-text">4、删除值</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#有返回值的删除pop-1"><span class="nav-number">7.4.1.</span> <span class="nav-text">有返回值的删除pop</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-当key存在时"><span class="nav-number">7.4.1.1.</span> <span class="nav-text">1. 当key存在时</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-当key不存在时"><span class="nav-number">7.4.1.2.</span> <span class="nav-text">2. 当key不存在时</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#没有返回值的删除"><span class="nav-number">7.4.2.</span> <span class="nav-text">没有返回值的删除</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#删除整个字典del"><span class="nav-number">7.4.3.</span> <span class="nav-text">删除整个字典del</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5、键keys-，值values-，键值对items"><span class="nav-number">7.5.</span> <span class="nav-text">5、键keys()，值values()，键值对items()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6、字典更新修改"><span class="nav-number">7.6.</span> <span class="nav-text">6、字典更新修改</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7、setdefaul的用处"><span class="nav-number">7.7.</span> <span class="nav-text">7、setdefaul的用处</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1、字典有中有key，则不修改，返回原key对应的原值"><span class="nav-number">7.7.1.</span> <span class="nav-text">1、字典有中有key，则不修改，返回原key对应的原值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2、没有对应的key，则添加，返回添加的key对应的value"><span class="nav-number">7.7.2.</span> <span class="nav-text">2、没有对应的key，则添加，返回添加的key对应的value</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#字典类型总结"><span class="nav-number">7.8.</span> <span class="nav-text">字典类型总结</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#集合-set"><span class="nav-number">8.</span> <span class="nav-text">集合(set)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1、去重"><span class="nav-number">8.1.</span> <span class="nav-text">1、去重</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2、集合运算关系"><span class="nav-number">8.2.</span> <span class="nav-text">2、集合运算关系</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1、交集（’-amp-’）"><span class="nav-number">8.2.1.</span> <span class="nav-text">1、交集（’&amp;’）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2、并集（’-’）"><span class="nav-number">8.2.2.</span> <span class="nav-text">2、并集（’|’）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3、差集（’-‘）"><span class="nav-number">8.2.3.</span> <span class="nav-text">3、差集（’-‘）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4、交叉补集（’-’）"><span class="nav-number">8.2.4.</span> <span class="nav-text">4、交叉补集（’^’）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3、长度len-3"><span class="nav-number">8.3.</span> <span class="nav-text">3、长度len</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4、成员运算in-和not-in"><span class="nav-number">8.4.</span> <span class="nav-text">4、成员运算in 和not in</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5、增加值"><span class="nav-number">8.5.</span> <span class="nav-text">5、增加值</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-一次添加一个值（add（））"><span class="nav-number">8.5.1.</span> <span class="nav-text">1.一次添加一个值（add（））</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-一次添加多个值（update-）"><span class="nav-number">8.5.2.</span> <span class="nav-text">2.一次添加多个值（update()）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6、删除值"><span class="nav-number">8.6.</span> <span class="nav-text">6、删除值</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-pop-随机删除一个"><span class="nav-number">8.6.1.</span> <span class="nav-text">1.pop()随机删除一个</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-discard-当删除的元素不存在的时候，不会报错"><span class="nav-number">8.6.2.</span> <span class="nav-text">2.discard() 当删除的元素不存在的时候，不会报错</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-remove-当删除的元素不存在的时候，报错"><span class="nav-number">8.6.3.</span> <span class="nav-text">3.remove() 当删除的元素不存在的时候，报错</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结集合类型"><span class="nav-number">8.7.</span> <span class="nav-text">总结集合类型</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        
+<div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">杰克</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/clicklove.js"></script>
+ <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"log":false});</script></body>
+
+
+</html>
