@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-02-28T14:58:14.791Z</updated>
+  <updated>2020-02-29T13:49:08.890Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,20 +17,33 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>清除浮动</title>
-    <link href="http://yoursite.com/2020/02/28/11-%E5%85%83%E7%B4%A0%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8/"/>
-    <id>http://yoursite.com/2020/02/28/11-元素清除浮动/</id>
-    <published>2020-02-28T14:58:35.000Z</published>
-    <updated>2020-02-28T14:58:14.791Z</updated>
+    <title></title>
+    <link href="http://yoursite.com/2020/02/29/11-CSS3%E6%96%B0%E7%89%B9%E6%80%A7/"/>
+    <id>http://yoursite.com/2020/02/29/11-CSS3新特性/</id>
+    <published>2020-02-29T13:49:08.889Z</published>
+    <updated>2020-02-29T13:49:08.890Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="清除浮动"><a href="#清除浮动" class="headerlink" title="清除浮动"></a>清除浮动</h1><p>清除浮动主要为了解决父级元素因为子级浮动引起内部高度为0 的问题。</p><h2 id="清除浮动的方法"><a href="#清除浮动的方法" class="headerlink" title="清除浮动的方法"></a>清除浮动的方法</h2><p>在CSS中，clear属性用于清除浮动，其基本语法格式如下：</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">选择器&#123;<span class="attribute">clear</span>:both;&#125;</span><br></pre></td></tr></table></figure><h3 id="额外标签法"><a href="#额外标签法" class="headerlink" title="额外标签法"></a>额外标签法</h3><p>通过在浮动元素末尾添加一个空的标签（块级元素）例如</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">”clear:both”</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span>，或则其他标签br等亦可。</span><br></pre></td></tr></table></figure><h3 id="父级添加overflow属性方法"><a href="#父级添加overflow属性方法" class="headerlink" title="父级添加overflow属性方法"></a>父级添加overflow属性方法</h3><p>可以给父级添加： <font color="red"><strong>overflow为 hidden</strong></font>|auto|scroll  都可以实现。</p><h3 id="使用after伪元素清除浮动-常用"><a href="#使用after伪元素清除浮动-常用" class="headerlink" title="使用after伪元素清除浮动(常用)"></a><font color="red">使用after伪元素清除浮动(常用)</font></h3><p>:after方式为空格元素的升级版，好处是不用单独加标签了<br>使用方法：<br>    <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"> <span class="selector-class">.clearfix</span><span class="selector-pseudo">:after</span> &#123;  <span class="attribute">content</span>: <span class="string">""</span>;</span><br><span class="line">  <span class="attribute">display</span>: block;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">0</span>;</span><br><span class="line">   <span class="comment">/* 隐藏元素  */</span></span><br><span class="line">  <span class="attribute">visibility</span>: hidden;</span><br><span class="line">  <span class="comment">/* 清除浮动 */</span></span><br><span class="line">  <span class="attribute">clear</span>: both;</span><br><span class="line">   &#125;   </span><br><span class="line">   <span class="comment">/* 兼容低版本ie浏览器 */</span></span><br><span class="line">.clearfix &#123;*zoom: 1;&#125;</span><br></pre></td></tr></table></figure></p><h3 id="使用before和after双伪元素清除浮动"><a href="#使用before和after双伪元素清除浮动" class="headerlink" title="使用before和after双伪元素清除浮动"></a>使用before和after双伪元素清除浮动</h3><p>使用方法：</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.clearfix</span><span class="selector-pseudo">:before</span>,<span class="selector-class">.clearfix</span><span class="selector-pseudo">:after</span> &#123;</span><br><span class="line">  <span class="attribute">content</span>:<span class="string">"."</span>;</span><br><span class="line">  <span class="attribute">display</span>:table;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.clearfix</span><span class="selector-pseudo">:after</span> &#123;</span><br><span class="line"> <span class="attribute">clear</span>:both;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.clearfix</span> &#123;</span><br><span class="line">  *zoom:1;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>CSS布局</title>
+    <link href="http://yoursite.com/2020/02/28/13-%E5%B8%83%E5%B1%80/"/>
+    <id>http://yoursite.com/2020/02/28/13-布局/</id>
+    <published>2020-02-28T15:45:23.000Z</published>
+    <updated>2020-02-28T15:05:47.526Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="居中布局"><a href="#居中布局" class="headerlink" title="居中布局"></a>居中布局</h1><h2 id="水平居中"><a href="#水平居中" class="headerlink" title="水平居中"></a>水平居中</h2><h2 id="垂直居中"><a href="#垂直居中" class="headerlink" title="垂直居中"></a>垂直居中</h2>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h1 id=&quot;清除浮动&quot;&gt;&lt;a href=&quot;#清除浮动&quot; class=&quot;headerlink&quot; title=&quot;清除浮动&quot;&gt;&lt;/a&gt;清除浮动&lt;/h1&gt;&lt;p&gt;清除浮动主要为了解决父级元素因为子级浮动引起内部高度为0 的问题。&lt;/p&gt;
-&lt;h2 id=&quot;清除浮动的方法&quot;&gt;&lt;a href
+        &lt;h1 id=&quot;居中布局&quot;&gt;&lt;a href=&quot;#居中布局&quot; class=&quot;headerlink&quot; title=&quot;居中布局&quot;&gt;&lt;/a&gt;居中布局&lt;/h1&gt;&lt;h2 id=&quot;水平居中&quot;&gt;&lt;a href=&quot;#水平居中&quot; class=&quot;headerlink&quot; title=&quot;水平居中&quot;&gt;&lt;/a
       
     
     </summary>
@@ -38,21 +51,33 @@
       <category term="CSS" scheme="http://yoursite.com/categories/CSS/"/>
     
     
-      <category term="HTML标签" scheme="http://yoursite.com/tags/HTML%E6%A0%87%E7%AD%BE/"/>
+      <category term="CSS" scheme="http://yoursite.com/tags/CSS/"/>
     
   </entry>
   
   <entry>
-    <title></title>
-    <link href="http://yoursite.com/2020/02/28/12-%E5%B8%83%E5%B1%80/"/>
-    <id>http://yoursite.com/2020/02/28/12-布局/</id>
-    <published>2020-02-28T14:53:07.973Z</published>
-    <updated>2020-02-28T14:53:07.974Z</updated>
+    <title>清除浮动</title>
+    <link href="http://yoursite.com/2020/02/28/12-%E5%85%83%E7%B4%A0%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8/"/>
+    <id>http://yoursite.com/2020/02/28/12-元素清除浮动/</id>
+    <published>2020-02-28T14:58:35.000Z</published>
+    <updated>2020-02-29T03:41:54.751Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="清除浮动"><a href="#清除浮动" class="headerlink" title="清除浮动"></a>清除浮动</h1><p>清除浮动主要为了解决父级元素因为子级浮动引起内部高度为0的问题。</p><h2 id="清除浮动的方法"><a href="#清除浮动的方法" class="headerlink" title="清除浮动的方法"></a>清除浮动的方法</h2><p>在CSS中，clear属性用于清除浮动，其基本语法格式如下：</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">选择器&#123;<span class="attribute">clear</span>:both;&#125;</span><br></pre></td></tr></table></figure><h3 id="额外标签法"><a href="#额外标签法" class="headerlink" title="额外标签法"></a>额外标签法</h3><p>通过在浮动元素末尾添加一个空的标签（块级元素）例如</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">”clear:both”</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span>，或则其他标签br等亦可。</span><br></pre></td></tr></table></figure><h3 id="父级添加overflow属性方法"><a href="#父级添加overflow属性方法" class="headerlink" title="父级添加overflow属性方法"></a>父级添加overflow属性方法</h3><p>可以给父级添加： <font color="red"><strong>overflow为 hidden</strong></font>|auto|scroll  都可以实现。</p><h3 id="使用after伪元素清除浮动-常用"><a href="#使用after伪元素清除浮动-常用" class="headerlink" title="使用after伪元素清除浮动(常用)"></a><font color="red">使用after伪元素清除浮动(常用)</font></h3><p>:after方式为空格元素的升级版，好处是不用单独加标签了<br>使用方法：<br>    <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"> <span class="selector-class">.clearfix</span><span class="selector-pseudo">:after</span> &#123;  <span class="attribute">content</span>: <span class="string">""</span>;</span><br><span class="line">  <span class="attribute">display</span>: block;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">0</span>;</span><br><span class="line">   <span class="comment">/* 隐藏元素  */</span></span><br><span class="line">  <span class="attribute">visibility</span>: hidden;</span><br><span class="line">  <span class="comment">/* 清除浮动 */</span></span><br><span class="line">  <span class="attribute">clear</span>: both;</span><br><span class="line">   &#125;   </span><br><span class="line">   <span class="comment">/* 兼容低版本ie浏览器 */</span></span><br><span class="line">.clearfix &#123;*zoom: 1;&#125;</span><br></pre></td></tr></table></figure></p><h3 id="使用before和after双伪元素清除浮动"><a href="#使用before和after双伪元素清除浮动" class="headerlink" title="使用before和after双伪元素清除浮动"></a>使用before和after双伪元素清除浮动</h3><p>使用方法：</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.clearfix</span><span class="selector-pseudo">:before</span>,<span class="selector-class">.clearfix</span><span class="selector-pseudo">:after</span> &#123;</span><br><span class="line">  <span class="attribute">content</span>:<span class="string">"."</span>;</span><br><span class="line">  <span class="attribute">display</span>:table;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.clearfix</span><span class="selector-pseudo">:after</span> &#123;</span><br><span class="line"> <span class="attribute">clear</span>:both;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.clearfix</span> &#123;</span><br><span class="line">  *zoom:1;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
+      
+      
+        &lt;h1 id=&quot;清除浮动&quot;&gt;&lt;a href=&quot;#清除浮动&quot; class=&quot;headerlink&quot; title=&quot;清除浮动&quot;&gt;&lt;/a&gt;清除浮动&lt;/h1&gt;&lt;p&gt;清除浮动主要为了解决父级元素因为子级浮动引起内部高度为0的问题。&lt;/p&gt;
+&lt;h2 id=&quot;清除浮动的方法&quot;&gt;&lt;a href=
+      
+    
     </summary>
     
+      <category term="CSS" scheme="http://yoursite.com/categories/CSS/"/>
+    
+    
+      <category term="CSS" scheme="http://yoursite.com/tags/CSS/"/>
     
   </entry>
   

@@ -1,20 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[清除浮动]]></title>
-    <url>%2F2020%2F02%2F28%2F11-%E5%85%83%E7%B4%A0%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8%2F</url>
-    <content type="text"><![CDATA[清除浮动清除浮动主要为了解决父级元素因为子级浮动引起内部高度为0 的问题。 清除浮动的方法在CSS中，clear属性用于清除浮动，其基本语法格式如下： 1选择器&#123;clear:both;&#125; 额外标签法通过在浮动元素末尾添加一个空的标签（块级元素）例如 1&lt;div style=”clear:both”&gt;&lt;/div&gt;，或则其他标签br等亦可。 父级添加overflow属性方法可以给父级添加： overflow为 hidden|auto|scroll 都可以实现。 使用after伪元素清除浮动(常用):after方式为空格元素的升级版，好处是不用单独加标签了使用方法： 12345678910 .clearfix:after &#123; content: ""; display: block; height: 0; /* 隐藏元素 */ visibility: hidden; /* 清除浮动 */ clear: both; &#125; /* 兼容低版本ie浏览器 */.clearfix &#123;*zoom: 1;&#125; 使用before和after双伪元素清除浮动使用方法： 12345678910.clearfix:before,.clearfix:after &#123; content:"."; display:table;&#125;.clearfix:after &#123; clear:both;&#125;.clearfix &#123; *zoom:1;&#125;]]></content>
+    <title></title>
+    <url>%2F2020%2F02%2F29%2F11-CSS3%E6%96%B0%E7%89%B9%E6%80%A7%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[CSS布局]]></title>
+    <url>%2F2020%2F02%2F28%2F13-%E5%B8%83%E5%B1%80%2F</url>
+    <content type="text"><![CDATA[居中布局水平居中垂直居中]]></content>
       <categories>
         <category>CSS</category>
       </categories>
       <tags>
-        <tag>HTML标签</tag>
+        <tag>CSS</tag>
       </tags>
   </entry>
   <entry>
-    <title></title>
-    <url>%2F2020%2F02%2F28%2F12-%E5%B8%83%E5%B1%80%2F</url>
-    <content type="text"></content>
+    <title><![CDATA[清除浮动]]></title>
+    <url>%2F2020%2F02%2F28%2F12-%E5%85%83%E7%B4%A0%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8%2F</url>
+    <content type="text"><![CDATA[清除浮动清除浮动主要为了解决父级元素因为子级浮动引起内部高度为0的问题。 清除浮动的方法在CSS中，clear属性用于清除浮动，其基本语法格式如下： 1选择器&#123;clear:both;&#125; 额外标签法通过在浮动元素末尾添加一个空的标签（块级元素）例如 1&lt;div style=”clear:both”&gt;&lt;/div&gt;，或则其他标签br等亦可。 父级添加overflow属性方法可以给父级添加： overflow为 hidden|auto|scroll 都可以实现。 使用after伪元素清除浮动(常用):after方式为空格元素的升级版，好处是不用单独加标签了使用方法： 12345678910 .clearfix:after &#123; content: ""; display: block; height: 0; /* 隐藏元素 */ visibility: hidden; /* 清除浮动 */ clear: both; &#125; /* 兼容低版本ie浏览器 */.clearfix &#123;*zoom: 1;&#125; 使用before和after双伪元素清除浮动使用方法： 12345678910.clearfix:before,.clearfix:after &#123; content:"."; display:table;&#125;.clearfix:after &#123; clear:both;&#125;.clearfix &#123; *zoom:1;&#125;]]></content>
+      <categories>
+        <category>CSS</category>
+      </categories>
+      <tags>
+        <tag>CSS</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[CSS基础样式操作]]></title>
