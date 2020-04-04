@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="杰克·🐂">
 <meta property="og:description" content="字体样式属性（font）字体的大小（size）font-size：属性用于设置字号，字体大小像素，最常用（单位px） 字体 （family）font-family：属性用于设置字体。网页中常用的字体有宋体、微软雅黑、黑体等。 字体粗细 （weight）font-weight：属性用与定义字体的粗细，其可用属性值：normal(正常  400 )、bold(粗  700 )。 字体的样式（style">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-03-16T12:12:04.905Z">
+<meta property="og:updated_time" content="2020-03-23T07:20:58.705Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CSS基础样式操作">
 <meta name="twitter:description" content="字体样式属性（font）字体的大小（size）font-size：属性用于设置字号，字体大小像素，最常用（单位px） 字体 （family）font-family：属性用于设置字体。网页中常用的字体有宋体、微软雅黑、黑体等。 字体粗细 （weight）font-weight：属性用与定义字体的粗细，其可用属性值：normal(正常  400 )、bold(粗  700 )。 字体的样式（style">
@@ -447,8 +447,8 @@ list-style-type：url（） -->
 <h2 id="颜色半透明（css3）"><a href="#颜色半透明（css3）" class="headerlink" title="颜色半透明（css3）"></a>颜色半透明（css3）</h2><p>文字颜色到了css3我们可以采取半透明的格式了</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">语法格式如下：</span><br><span class="line"><span class="selector-tag">color</span><span class="selector-pseudo">:rgba(r</span>,<span class="selector-tag">g</span>,<span class="selector-tag">b</span>,<span class="selector-tag">a</span>)   <span class="selector-tag">a</span> 是<span class="selector-tag">alpha</span>  透明的意思 取值范围0<span class="selector-tag">-1</span>之间</span><br><span class="line"> <span class="selector-tag">color</span><span class="selector-pseudo">:rgba(0</span>,0,0,0<span class="selector-class">.3</span>)</span><br></pre></td></tr></table></figure>
 
-
-<h2 id="透明度"><a href="#透明度" class="headerlink" title="透明度"></a>透明度</h2><p> 当元素样式都定义好后，需要有一个透明度的效果，所有属性都会变透明<br> <figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">opacity</span>: <span class="number">0.1</span>;</span><br></pre></td></tr></table></figure></p>
+<h2 id="透明度"><a href="#透明度" class="headerlink" title="透明度"></a>透明度</h2><p> 当元素样式都定义好后，需要有一个透明度的效果，所有属性都会变透明<br> <figure class="highlight processing"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">filter</span>：<span class="built_in">alpha</span>（opacity=<span class="number">0.1</span>）<span class="comment">//IE</span></span><br><span class="line">opacity: <span class="number">0.1</span>;</span><br></pre></td></tr></table></figure></p>
+<p> 模糊处理filter:<br> 例如： filter: blur(5px);     blur模糊处理  数值越大越模糊</p>
 <h2 id="文字阴影（css3）"><a href="#文字阴影（css3）" class="headerlink" title="文字阴影（css3）"></a>文字阴影（css3）</h2><p>以后可以给我们的文字添加阴影效果了shadow影子</p>
 <figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">text-<span class="keyword">shadow:水平位置 </span> 垂直位置  模糊距离  阴影颜色<span class="comment">;</span></span><br><span class="line">text-<span class="keyword">shadow：2px </span> <span class="number">11</span>px  <span class="number">3</span>px  rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>.<span class="number">5</span>)<span class="comment">;</span></span><br></pre></td></tr></table></figure>
 
@@ -1064,7 +1064,7 @@ list-style-type：url（） -->
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2020/02/28/12-元素清除浮动or居中/" rel="prev" title="元素清除浮动or居中">
+              <a href="/2020/02/28/11-元素清除浮动or居中/" rel="prev" title="元素清除浮动or居中">
                 元素清除浮动or居中 <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -1157,7 +1157,7 @@ list-style-type：url（） -->
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -1168,7 +1168,7 @@ list-style-type：url（） -->
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
