@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="杰克·🐂">
 <meta property="og:description" content="变量变量的定义变量 是数据的“命名存储”。我们可以使用变量来保存商品、访客和其他信息。在 JavaScript 中创建一个变量，我们需要用到let（var、const） 关键字。var：会进行变量的提升（预解析）而let不会。const：不可以改变赋值的内容下面的语句创建（也可以称为 声明 或者 定义）了一个名称为 “msg” 的变量： 1let msg;  通过赋值操作符 = 为变量添加一些数据">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-04-04T12:01:43.892Z">
+<meta property="og:updated_time" content="2020-04-04T12:07:52.185Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Javascript基础">
 <meta name="twitter:description" content="变量变量的定义变量 是数据的“命名存储”。我们可以使用变量来保存商品、访客和其他信息。在 JavaScript 中创建一个变量，我们需要用到let（var、const） 关键字。var：会进行变量的提升（预解析）而let不会。const：不可以改变赋值的内容下面的语句创建（也可以称为 声明 或者 定义）了一个名称为 “msg” 的变量： 1let msg;  通过赋值操作符 = 为变量添加一些数据">
@@ -368,11 +368,6 @@
           
 
           
-            <span class="post-meta-divider">|</span>
-            <span class="page-pv"><i class="fa fa-file-o"></i>
-            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
-            </span>
-          
 
           
 
@@ -502,12 +497,12 @@
 <figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Math.<span class="built_in">sqrt</span>(<span class="number">9</span>) <span class="comment">// 3</span></span><br><span class="line">Math.<span class="built_in">sqrt</span>(-<span class="number">9</span>) <span class="comment">// NaN</span></span><br></pre></td></tr></table></figure>
 
 <h2 id="Date对象"><a href="#Date对象" class="headerlink" title="Date对象"></a>Date对象</h2><p>Date对象是javascript用来处理日期和时间。<br>Date对象可以直接作为普通函数调用，返回当前时间的字符串</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="title">Date</span><span class="params">()</span></span></span><br><span class="line"><span class="string">"Sat Apr 01 2020 14:47:47 GMT+0800 (中国标准时间)"</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="title">Date</span><span class="params">()</span></span></span><br><span class="line"><span class="string">"Sat Mar 27 2020 14:47:47 GMT+0800 (中国标准时间)"</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="构造函数的用法"><a href="#构造函数的用法" class="headerlink" title="构造函数的用法"></a>构造函数的用法</h3><p>Date可以当作构造函数使用，使用关键字new创建，返回Date实例对象。</p>
 <ol>
 <li>toString方法返回一个完整的日期字符串。</li>
-<li>valueOf方法毫秒值<figure class="highlight lasso"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="built_in">date</span> = <span class="literal">new</span> <span class="built_in">Date</span>();</span><br><span class="line"><span class="built_in">date</span>.toString()</span><br><span class="line"><span class="string">"Sat Apr 01 2020 14:47:47 GMT+0800 (中国标准时间)"</span></span><br><span class="line"><span class="built_in">date</span>.valueOf()</span><br><span class="line"><span class="number">1585983004225</span></span><br></pre></td></tr></table></figure>
+<li>valueOf方法毫秒值<figure class="highlight lasso"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="built_in">date</span> = <span class="literal">new</span> <span class="built_in">Date</span>();</span><br><span class="line"><span class="built_in">date</span>.toString()</span><br><span class="line"><span class="string">"Sat Mar 27 2020 14:47:47 GMT+0800 (中国标准时间)"</span></span><br><span class="line"><span class="built_in">date</span>.valueOf()</span><br><span class="line"><span class="number">1585983004225</span></span><br></pre></td></tr></table></figure>
 
 </li>
 </ol>
@@ -517,7 +512,7 @@
 <li>Date.prototype.toLocaleTimeString()：本地时间（不含年月日）。</li>
 <li>Date.prototype.toDateString() ：英文格式</li>
 </ol>
-<figure class="highlight lasso"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="built_in">date</span> = <span class="literal">new</span> <span class="built_in">Date</span>();</span><br><span class="line"></span><br><span class="line"><span class="built_in">date</span>.toLocaleString();</span><br><span class="line"><span class="comment">//2020/4/1 下午3:14:38</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">date</span>.toLocaleDateString();</span><br><span class="line"><span class="comment">//2020/4/1</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">date</span>.toLocaleTimeString();</span><br><span class="line"><span class="comment">//下午3:14:38</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">date</span>.toDateString();</span><br><span class="line"><span class="comment">//Sat Apr 01 2020</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight lasso"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="built_in">date</span> = <span class="literal">new</span> <span class="built_in">Date</span>();</span><br><span class="line"></span><br><span class="line"><span class="built_in">date</span>.toLocaleString();</span><br><span class="line"><span class="comment">//2020/3/27 下午3:14:38</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">date</span>.toLocaleDateString();</span><br><span class="line"><span class="comment">//2020/3/27</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">date</span>.toLocaleTimeString();</span><br><span class="line"><span class="comment">//下午3:14:38</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">date</span>.toDateString();</span><br><span class="line"><span class="comment">//Sat Mar 27 2020</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="获取日期指定的部分"><a href="#获取日期指定的部分" class="headerlink" title="获取日期指定的部分"></a>获取日期指定的部分</h3><ol>
 <li>getTime()：返回实例距离1970年1月1日00:00:00的毫秒数，等同于valueOf方法。</li>
@@ -971,26 +966,6 @@
 
 
         
-<div class="busuanzi-count">
-  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-  
-    <span class="site-uv">
-      <i class="fa fa-user"></i>
-      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
-      
-    </span>
-  
-
-  
-    <span class="site-pv">
-      <i class="fa fa-eye"></i>
-      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
-      
-    </span>
-  
-</div>
-
 
 
 
